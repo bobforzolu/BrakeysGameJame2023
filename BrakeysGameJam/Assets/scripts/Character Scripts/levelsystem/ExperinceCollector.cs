@@ -13,10 +13,12 @@ public class ExperinceCollector : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Experince"))
+        if (collision.CompareTag("ExperincePoints"))
         {
             ExperincePoint exp = collision.gameObject.GetComponent<ExperincePoint>();
             levelsystem.Addexperince(exp.AwardExperince());
+            collision.gameObject.SetActive(false);
         }
     }
+    
 }

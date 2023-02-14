@@ -26,8 +26,15 @@ public class CharacterControler : MonoBehaviour
     {
         Walk();
     }
+    /// <summary>
+    /// reads the control input and moves the character with physics
+    /// </summary>
     public void Walk()
     {
         RB2D.velocity = new Vector2(input.GetMovementInput().x * currentSpeed, input.GetMovementInput().y * currentSpeed);
+    }
+    public void Attack()
+    {
+
     }
 }
