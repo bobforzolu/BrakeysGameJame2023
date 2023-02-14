@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Enemy
   m_EditorClassIdentifier: 
   EnemySprite: {fileID: 0}
+  animationClip: {fileID: 0}
   speed: 1
   health: 2
+  Color: {r: 1, g: 1, b: 1, a: 0}
