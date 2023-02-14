@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     private Transform currentPosition;
     private static Transform playerPosition;
     private GameObject player;
+
     public EnemyData enemyData;
     void Start()
     {
