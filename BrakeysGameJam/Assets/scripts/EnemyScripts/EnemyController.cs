@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour, IDamagable
 {
-    private Transform currentPosition;
-    private static Transform playerPosition;
-    [SerializeField]private GameObject player;
     [SerializeField]private Animator animator;
-    [SerializeField] private SpriteRenderer enemysprite;
+    [SerializeField]private SpriteRenderer enemysprite;
+    private Enemy enemy;
+    public EnemyData enemyData;
+    private Transform currentPosition;
 
-    [SerializeField] private EnemyData enemyData;
+    public  GameObject player;
+    public  Transform playerPosition;
+    private DropExperince dropExperince;
     void Start()
     {
         /// find the player in the scene
+        enemy = new Enemy(enemyData);
         player = GameObject.FindGameObjectWithTag("Player");
+        dropExperince = GetComponent<DropExperince>();
+        playerPosition = player.transform;
+
+
 
         // set starting position
-       currentPosition = gameObject.transform ;
+        currentPosition = gameObject.transform;
     }
 
     // Update is called once per frame
@@ -36,9 +43,10 @@ public class EnemyController : MonoBehaviour, IDamagable
     }
     public void SetEnemyData(EnemyData enemyData)
     {
-        enemysprite = gameObject.GetComponentInChildren<SpriteRenderer>();
         this.enemyData = enemyData;
-        if(enemyData.EnemySprite!= null)
+        enemysprite = gameObject.GetComponentInChildren<SpriteRenderer>();
+
+        if (enemyData.EnemySprite!= null)
         {
         enemysprite.sprite = enemyData.EnemySprite;
 
@@ -53,8 +61,25 @@ public class EnemyController : MonoBehaviour, IDamagable
         
     }
 
+    /// <summary>
+    /// takes damage when player attacks
+    /// </summary>
+    /// <param name="damage"></param>
     public void TakeDamage(int damage)
     {
+        ///enemy takes damage if 
+        enemy.HealthAfterDamage(damage);
+        if(enemy.currentHealth < 0)
+        {
+            dropExperince.DropExp();
+            EnemyDeath();
+        }
     }
+    public void EnemyDeath()
+    {
+        
+        Destroy(gameObject);
+    }
+
     #endregion
 }

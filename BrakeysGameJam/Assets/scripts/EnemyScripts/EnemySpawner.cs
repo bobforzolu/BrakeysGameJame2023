@@ -8,6 +8,7 @@ public class EnemySpawner : MonoBehaviour
     private int currentWave;
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Camera  maincamera;
+    public bool can;
     void Start()
     {
         maincamera = Camera.main;

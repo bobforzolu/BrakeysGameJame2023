@@ -8,7 +8,8 @@ public class EnemyData : ScriptableObject
 {
     public Sprite EnemySprite;
     public AnimatorController animationClip;
-    public float speed;
-    public float health;
     public Color Color;
+    public float speed;
+    public int health;
+    public int Damage;
 }

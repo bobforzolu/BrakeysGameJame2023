@@ -6,9 +6,9 @@ public class LevelSystemController : MonoBehaviour
 {
     
     private LevelSystem levelSystem;
-    private ExperinceCollector experinceCollector;
-    private LevelVisual levelVisual;
-    private UpgradeVisuals upgradeVisuals;
+   [SerializeField] private ExperinceCollector experinceCollector;
+    [SerializeField]private LevelVisual levelVisual;
+    [SerializeField] private UpgradeVisuals upgradeVisuals;
     private void Awake()
     {
         levelSystem = new LevelSystem();
@@ -16,11 +16,11 @@ public class LevelSystemController : MonoBehaviour
     }
     private void Start()
     {
-        experinceCollector = GetComponentInChildren<ExperinceCollector>();
-        levelVisual = GetComponentInChildren<LevelVisual>();
+        experinceCollector = transform.parent.GetComponentInChildren<ExperinceCollector>();
+        levelVisual =transform.parent.GetComponentInChildren<LevelVisual>();
         levelVisual.SetLevelSystem(levelSystem);
         experinceCollector.SetLevelSystem(levelSystem);
-        upgradeVisuals= GetComponentInChildren<UpgradeVisuals>();
+        upgradeVisuals= transform.parent.GetComponentInChildren<UpgradeVisuals>();
         upgradeVisuals.GetLevelSytem(levelSystem);
     }
     private void Update()

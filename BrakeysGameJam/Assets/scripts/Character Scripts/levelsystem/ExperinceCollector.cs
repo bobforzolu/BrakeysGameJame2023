@@ -15,7 +15,7 @@ public class ExperinceCollector : MonoBehaviour
     {
         if (collision.CompareTag("ExperincePoints"))
         {
-            ExperincePoint exp = collision.gameObject.GetComponent<ExperincePoint>();
+            ExperincePoint exp = collision.gameObject.GetComponentInParent<ExperincePoint>();
             levelsystem.Addexperince(exp.AwardExperince());
             collision.gameObject.SetActive(false);
         }

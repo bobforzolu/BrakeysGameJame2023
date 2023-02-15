@@ -8,6 +8,10 @@ public class CharacterControler : MonoBehaviour
     private GameInput input;
     private Rigidbody2D RB2D;
     public CharacterData characterData;
+    public GameObject autoattackHitbox;
+    public bool attack;
+    float attacktime;
+    float currenttime;
     #endregion
 
     #region variables
@@ -18,10 +22,15 @@ public class CharacterControler : MonoBehaviour
         input = GetComponent<GameInput>();
         RB2D = GetComponent<Rigidbody2D>();
         currentSpeed = characterData.initalMovementspeed;
+        attacktime = 1f;
+        currenttime = attacktime;
     }
-
+    public void Update()
+    {
+        Attack();
+    }
     // Update is called once per frame
-    
+
     private void FixedUpdate()
     {
         Walk();
@@ -35,6 +44,19 @@ public class CharacterControler : MonoBehaviour
     }
     public void Attack()
     {
-
+        autoattackHitbox.GetComponent<HitBoxDetection>().DODamage(4);
+    }
+    public void tTimer()
+    {
+        if (attack)
+        {
+            Attack();
+            attack= false;
+            currenttime = attacktime;
+        }
+        else
+        {
+            currenttime -= Time.deltaTime ;
+        }
     }
 }
