@@ -19,7 +19,7 @@ public class KnightController :HeroControler
     // Update is called once per frame
     private void Update()
     {
-        
+        FacingDirection();   
     }
     private void FixedUpdate()
     {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameInput : MonoBehaviour
 {
     private PlayerInputActions playerInputActions;
+    private Camera cam;
     private void Awake()
     {
          playerInputActions = new PlayerInputActions();
@@ -12,6 +13,7 @@ public class GameInput : MonoBehaviour
     }
     void Start()
     {
+        cam = Camera.main;
         
     }
     public Vector2 GetMovementInput()
@@ -21,6 +23,14 @@ public class GameInput : MonoBehaviour
         inputValue = inputValue.normalized;
 
         return inputValue;
+    }
+    public Vector2 GetMousePosition()
+    {
+        Vector3 rawmouseposition = playerInputActions.player.Aim.ReadValue<Vector2>();
+        Vector3 mouseposition =cam.ScreenToWorldPoint(rawmouseposition);
+        Vector3 direction = mouseposition - transform.position;
+
+        return direction;
     }
 
    
