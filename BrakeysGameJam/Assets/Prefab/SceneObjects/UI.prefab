@@ -1101,7 +1101,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018416989393177807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 358999463}
+        m_TargetAssemblyTypeName: SelectUpgrades, Assembly-CSharp
+        m_MethodName: SelectUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &358999463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,7 +1651,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018416989872187686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 119685954}
+        m_TargetAssemblyTypeName: SelectUpgrades, Assembly-CSharp
+        m_MethodName: SelectUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &119685954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1812,7 +1836,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018416989984350484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2058885157}
+        m_TargetAssemblyTypeName: SelectUpgrades, Assembly-CSharp
+        m_MethodName: SelectUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2058885157
 MonoBehaviour:
   m_ObjectHideFlags: 0
