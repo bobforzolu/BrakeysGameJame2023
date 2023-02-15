@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ExperincePoints
   - Enemy
+  - Ui
+  - UpGradeUi
   layers:
   - Default
   - TransparentFX

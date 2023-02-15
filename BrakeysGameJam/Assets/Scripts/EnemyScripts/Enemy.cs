@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy 
 {
-    public int currentHealth;
+    public float currentHealth;
     public int damage;
 
     public Enemy(EnemyData data)
@@ -19,14 +19,14 @@ public class Enemy
         return damage;
     }
 
-    public void HealthAfterDamage(int damage)
+    public void HealthAfterDamage(float damage)
     {
         currentHealth -= damage;
 
         
         
     }
-    public int Currenthealth()
+    public float Currenthealth()
     {
         return currentHealth;
     }

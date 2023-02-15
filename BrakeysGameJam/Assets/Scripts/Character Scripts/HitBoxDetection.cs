@@ -6,10 +6,7 @@ public class HitBoxDetection : MonoBehaviour
 {
     private List<IDamagable> enemies = new List<IDamagable>();
 
-    public void Start()
-    {
-        
-    }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
@@ -43,19 +40,24 @@ public class HitBoxDetection : MonoBehaviour
         }
         
     }
-    public void DODamage( int damage)
+    public void DoDamage( int damage)
     {
+                int hitenemy = 1;
         foreach (IDamagable enemy in enemies)
         {
             if(enemy != null)
             {
                 enemy.TakeDamage(damage);
+                Debug.Log("hit enemy no." + hitenemy);
+                hitenemy++;
                 
-
             }
         }
     }
-
+    private void OnDrawGizmos()
+    {
+        
+    }
 
 
 }

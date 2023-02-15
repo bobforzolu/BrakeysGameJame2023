@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     public  GameObject player;
     public  Transform playerPosition;
     private DropExperince dropExperince;
+
     void Start()
     {
         /// find the player in the scene
@@ -30,7 +31,6 @@ public class EnemyController : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
-
         FindPlayer();
     }
 

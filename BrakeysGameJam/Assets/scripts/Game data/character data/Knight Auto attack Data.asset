@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8050a18f5b9beb49b1b98e03bb44903, type: 3}
-  m_Name: TestData
+  m_Script: {fileID: 11500000, guid: 9ca975a49f80379439214e6a38e011fd, type: 3}
+  m_Name: Knight Auto attack Data
   m_EditorClassIdentifier: 
-  initalMovementspeed: 10
+  AttackInterval: 1
+  Damage: 5
+  speed: 0

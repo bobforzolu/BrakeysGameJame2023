@@ -21,7 +21,7 @@ public class CharacterControler : MonoBehaviour
     {
         input = GetComponent<GameInput>();
         RB2D = GetComponent<Rigidbody2D>();
-        currentSpeed = characterData.initalMovementspeed;
+        currentSpeed = characterData.initalSpeed;
         attacktime = 1f;
         currenttime = attacktime;
     }
@@ -44,19 +44,7 @@ public class CharacterControler : MonoBehaviour
     }
     public void Attack()
     {
-        autoattackHitbox.GetComponent<HitBoxDetection>().DODamage(4);
+        autoattackHitbox.GetComponent<HitBoxDetection>().DoDamage(4);
     }
-    public void tTimer()
-    {
-        if (attack)
-        {
-            Attack();
-            attack= false;
-            currenttime = attacktime;
-        }
-        else
-        {
-            currenttime -= Time.deltaTime ;
-        }
-    }
+
 }

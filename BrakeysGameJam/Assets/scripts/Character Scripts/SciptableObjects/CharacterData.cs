@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="Character Data", menuName ="Character/ CharacterData")]
+[CreateAssetMenu(fileName ="Character Stat", menuName ="Character/ CharacterStat")]
 public class CharacterData : ScriptableObject
 {
-    public int initalMovementspeed;
+    public int initalSpeed;
+    public int initalAttack;
+    public float initalttakSpeed;
+    public int initalHealth;
+    public int initalMana;
+    public int initaltamina;
+
     
 }
