@@ -5,6 +5,8 @@ using UnityEngine;
 public class KnightController :HeroControler
 {
     private HeroStats heroStats;
+    private KnightAutoAttack autoAttack;
+
     private void Awake()
     {
         heroStats = new(characterData);
@@ -12,14 +14,17 @@ public class KnightController :HeroControler
     private void Start()
     {
         LoadData();
-        autoattack.SetStatData(heroStats);
+
+        autoAttack = GetComponentInChildren<KnightAutoAttack>();
+
+        autoAttack.SetStatData(heroStats);
         
 
     }
     // Update is called once per frame
     private void Update()
     {
-        FacingDirection();   
+        AttackDirection(this.gameObject);   
     }
     private void FixedUpdate()
     {

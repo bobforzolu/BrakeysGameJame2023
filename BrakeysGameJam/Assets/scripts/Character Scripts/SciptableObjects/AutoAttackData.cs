@@ -8,4 +8,5 @@ public class AutoAttackData : ScriptableObject
     public float AttackInterval;
     public int Damage;
     public float ProjectileSpeed;
+    public int ProjectileAmount;
 }

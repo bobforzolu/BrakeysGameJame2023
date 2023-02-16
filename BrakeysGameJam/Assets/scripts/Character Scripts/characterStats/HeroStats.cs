@@ -41,7 +41,7 @@ public class HeroStats
     {
         return attackSpeed;
     }
-    public float GetMovement()
+    public int GetMovement()
     {
         return movement;
     }

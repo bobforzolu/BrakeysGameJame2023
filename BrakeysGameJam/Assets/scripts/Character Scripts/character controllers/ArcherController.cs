@@ -2,17 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherController : MonoBehaviour
+public class ArcherController : HeroControler
 {
-    // Start is called before the first frame update
-    void Start()
+    private HeroStats heroStats;
+    public GameObject autoattackGameObject;
+    private void Awake()
+    {
+        heroStats = new HeroStats(characterData);
+        LoadData();
+    }
+    private void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        AttackDirection(autoattackGameObject);
+    }
+    private void FixedUpdate()
+    {
+        Movement(heroStats.GetMovement());
+    }
+    public override void AbilityOne()
+    {
+        base.AbilityOne();
+    }
+
+    public override void AbilityTwo()
+    {
+        base.AbilityTwo();
+    }
+
+    public override void LoadData()
+    {
+        base.LoadData();
     }
 }

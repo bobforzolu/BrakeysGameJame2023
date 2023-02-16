@@ -24,8 +24,8 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < enemyWave[currentWave].SpawnRatePerSecond; i++)
         {
             GameObject enemy = enemyPrefab;
-            enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
             Instantiate(enemy, new Vector2(maincamera.transform.position.x + Random.Range(-SpawnLocation().x, SpawnLocation().x), maincamera.transform.position.y+ Random.Range(-SpawnLocation().y, SpawnLocation().y)),Quaternion.identity);
+            enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
 
         }
     }

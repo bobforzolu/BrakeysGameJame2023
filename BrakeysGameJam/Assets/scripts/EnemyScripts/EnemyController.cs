@@ -49,6 +49,7 @@ public class EnemyController : MonoBehaviour, IDamagable
         if (enemyData.EnemySprite!= null)
         {
         enemysprite.sprite = enemyData.EnemySprite;
+            enemysprite.color = enemyData.Color;
 
         }
 
