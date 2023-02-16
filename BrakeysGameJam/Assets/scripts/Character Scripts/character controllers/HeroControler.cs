@@ -29,6 +29,10 @@ public abstract class HeroControler :MonoBehaviour
 
         
     }
+    public void GetAngle()
+    {
+
+    }
  
    
     public virtual void AbilityOne()

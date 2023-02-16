@@ -5,10 +5,13 @@ using UnityEngine;
 public class ArcherController : HeroControler
 {
     private HeroStats heroStats;
+    private RangedAutoAttacks rangedAuto;
     public GameObject autoattackGameObject;
     private void Awake()
     {
         heroStats = new HeroStats(characterData);
+        rangedAuto = GetComponentInChildren<RangedAutoAttacks>();
+        rangedAuto.SetStatData(heroStats);
         LoadData();
     }
     private void Start()
@@ -21,7 +24,7 @@ public class ArcherController : HeroControler
     }
     private void FixedUpdate()
     {
-        Movement(heroStats.GetMovement());
+        Movement(heroStats.GetMovementSpeed());
     }
     public override void AbilityOne()
     {

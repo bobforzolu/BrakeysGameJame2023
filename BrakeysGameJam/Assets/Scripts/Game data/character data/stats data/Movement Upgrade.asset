@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca975a49f80379439214e6a38e011fd, type: 3}
-  m_Name: Archer auto attack data
+  m_Script: {fileID: 11500000, guid: 8ce114d33850663449534914f4389752, type: 3}
+  m_Name: Movement Upgrade
   m_EditorClassIdentifier: 
-  AttackInterval: 0
-  Damage: 0
-  ProjectileSpeed: 0
+  Amount: 1
+  description: increase movement
+  stateUpgrade: 3

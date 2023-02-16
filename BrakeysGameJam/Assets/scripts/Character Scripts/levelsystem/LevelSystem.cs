@@ -10,14 +10,17 @@ public class LevelSystem
     public event EventHandler OnExperinceEarned;
     private int level;
     private int experience;
-    private int experienceToNextLevel;
+    private float experienceToNextLevel;
+    private float initalexp;
+    private float modifier;
 
     public  LevelSystem()
     {
         level = 1;
         experience = 0;
         experienceToNextLevel = 100 ;
-
+        modifier = .5f;
+        
     }
     public void Addexperince(int Amount)
     {
@@ -30,6 +33,10 @@ public class LevelSystem
         }
         OnExperinceEarned?.Invoke(this, EventArgs.Empty);
     }
+    public void ExperinceModifier()
+    {
+        experienceToNextLevel += (experienceToNextLevel * .3f);
+    }
     public int GetLevelNumber()
     {
         return level;
@@ -40,7 +47,7 @@ public class LevelSystem
 
         return experience;
     }
-    public int GetExperineceToNextLevel()
+    public float GetExperineceToNextLevel()
     {
         return experienceToNextLevel;
     }

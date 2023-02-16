@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Cinemachine;
 
 public  class CharacterManager : MonoBehaviour
 {
     public CharacterManager instance { get; private set; }
     public EventHandler OnCharacterSpawn { get; private set; }
 
+    public CinemachineVirtualCamera cam;
+
     [SerializeField] private GameObject[] character;
     [SerializeField]private List<GameObject> characterLineUP = new List<GameObject>();
-    private int currentCharacter;
+    private List<GameObject> UsedCharachters= new List<GameObject>();
+    public GameObject SelectedCharacter { get; private set; }
+    private int characterIndex;
     private int prestige;
     private void Awake()
     {
@@ -28,5 +33,23 @@ public  class CharacterManager : MonoBehaviour
             characterLineUP.Add(character[i]);
         }
         
+        SummonCharacter();
+
+        
+    }
+    public void SummonCharacter()
+    {
+        // get the max character in the list
+        int maxRange = characterLineUP.Count ;
+        // get a random number
+        characterIndex = UnityEngine.Random.Range(0, maxRange);
+        // get the character in the list
+        SelectedCharacter= Instantiate(characterLineUP[characterIndex].gameObject,new Vector2(0,0), Quaternion.identity);
+        cam.Follow = SelectedCharacter.transform;
+        // remove the character in the line up list
+        characterLineUP.RemoveAt(characterIndex);
+        // add it to the used character list
+        UsedCharachters.Add(SelectedCharacter);
+
     }
 }

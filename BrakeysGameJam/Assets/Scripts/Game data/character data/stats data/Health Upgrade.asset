@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8050a18f5b9beb49b1b98e03bb44903, type: 3}
-  m_Name: Aracher Stat Data
+  m_Script: {fileID: 11500000, guid: 8ce114d33850663449534914f4389752, type: 3}
+  m_Name: Health Upgrade
   m_EditorClassIdentifier: 
-  initalSpeed: 0
-  initalAttack: 0
-  initalttakSpeed: 0
-  initalHealth: 0
-  initalMana: 0
-  initaltamina: 0
+  Amount: 5
+  description: 'increase health by '
+  stateUpgrade: 1

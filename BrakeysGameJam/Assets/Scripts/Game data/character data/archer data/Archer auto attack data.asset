@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ca975a49f80379439214e6a38e011fd, type: 3}
-  m_Name: Wizard auto attack Data
+  m_Name: Archer auto attack data
   m_EditorClassIdentifier: 
-  AttackInterval: 0
-  Damage: 5
-  ProjectileSpeed: 0
+  AttackInterval: 0.5
+  Damage: 3
+  ProjectileSpeed: 40.47
+  ProjectileAmount: 0

@@ -9,8 +9,8 @@ public class CharacterData : ScriptableObject
     public int initalAttack;
     public float initalttakSpeed;
     public int initalHealth;
-    public int initalMana;
-    public int initaltamina;
+    public int AbilityEnergy;
+    
 
     
 }

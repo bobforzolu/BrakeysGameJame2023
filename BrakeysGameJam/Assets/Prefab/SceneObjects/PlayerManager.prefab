@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6234922377928330803}
   - component: {fileID: 6234922377928330802}
+  - component: {fileID: 774778435}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -44,8 +45,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d44d0ea809d604993bcf2928eb0d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
   character:
   - {fileID: 369238827996746459, guid: e72a085e8c65f61499ef4ecf7b52b4d6, type: 3}
   - {fileID: 2906504392989066167, guid: 740884fb4e28570429799dd7189143e4, type: 3}
   - {fileID: 7425339524725396809, guid: 324aa1b4b041d58438f153815095a906, type: 3}
   characterLineUP: []
+--- !u!114 &774778435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234922377928330804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cc53f79348f81448ea576e4eb6a1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsUpgrades:
+  - {fileID: 11400000, guid: f0fe1cf71a444344f8f4a01c453fdc8b, type: 2}
+  - {fileID: 11400000, guid: 17a484a0b1ae42642854ec8a57895b5d, type: 2}
+  - {fileID: 11400000, guid: 37c0ddc6da0bdb146861082c5b64a0ff, type: 2}
+  - {fileID: 11400000, guid: 60e3e51df5ab07a43ad64b115bd51e57, type: 2}
+  - {fileID: 11400000, guid: 43691fd4356371142a28ba7d62e2e912, type: 2}
+  - {fileID: 11400000, guid: f1bba3dad409a494d935578cbb46caa7, type: 2}
+  UpgradeCanvas: {fileID: 0}
