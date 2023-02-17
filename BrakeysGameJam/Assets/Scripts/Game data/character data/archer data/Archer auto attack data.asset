@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Archer auto attack data
   m_EditorClassIdentifier: 
   AttackInterval: 0.5
+  TimeUntileNextAttack: 2
   Damage: 3
-  ProjectileSpeed: 40.47
-  ProjectileAmount: 0
+  ProjectileSpeed: 20
+  ProjectileAmount: 2

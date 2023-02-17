@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wizard auto attack Data
   m_EditorClassIdentifier: 
   AttackInterval: 6
+  TimeUntileNextAttack: 3
   Damage: 5
   ProjectileSpeed: 20
   ProjectileAmount: 0

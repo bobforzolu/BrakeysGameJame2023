@@ -69,7 +69,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         ///enemy takes damage if 
-        enemy.HealthAfterDamage(damage);
+        enemy.TakeDamage(damage);
         if(enemy.currentHealth < 0)
         {
             dropExperince.DropExp();

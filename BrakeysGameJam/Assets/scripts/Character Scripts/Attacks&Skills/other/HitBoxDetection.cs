@@ -18,7 +18,7 @@ public class HitBoxDetection : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        RemoveEnemies(collision);
+      
     }
 
 
@@ -53,6 +53,7 @@ public class HitBoxDetection : MonoBehaviour
                 
             }
         }
+        enemies.Clear();
     }
     private void OnDrawGizmos()
     {

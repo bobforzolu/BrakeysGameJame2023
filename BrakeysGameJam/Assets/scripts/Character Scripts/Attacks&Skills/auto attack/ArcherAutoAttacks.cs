@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class RangedAutoAttacks : MonoBehaviour
+public class ArcherAutoAttacks : MonoBehaviour
 {
     private bool canattack;
     private HeroStats heroStats;
@@ -14,14 +14,14 @@ public class RangedAutoAttacks : MonoBehaviour
     private float timer;
     private int currentDamage;
     private int numArrows ;
+    public int AutoAttackLeve;
     [SerializeField]private float angleBetweenArrows = 10.0f;
     // Start is called before the first frame update
     void Start()
     {
         currentDamage = attackData.Damage;
-
-        timer = 5;
-        currentDamage = attackData.Damage;
+        numArrows = attackData.ProjectileAmount;
+        timer = TimeUntilAttack();
     }
 
     // Update is called once per frame
@@ -52,7 +52,7 @@ public class RangedAutoAttacks : MonoBehaviour
 
     private float TimeUntilAttack()
     {
-        timer = timer = (attackData.AttackInterval - heroStats.GetAttackSpeed());
+        timer = attackData.TimeUntileNextAttack - (attackData.AttackInterval - heroStats.GetAttackSpeed());
 
         return timer;
     }
@@ -90,8 +90,11 @@ public class RangedAutoAttacks : MonoBehaviour
 
             // Set the velocity of the arrow's rigidbody to the arrow direction times the arrow speed
             Rigidbody2D arrowRigidbody = newArrow.GetComponent<Rigidbody2D>();
+            newArrow.GetComponent<arrowHitbox>().setDamade(currentDamage + heroStats.GetAttackDamage());
             arrowRigidbody.velocity = arrowDirection * attackData.ProjectileSpeed;
         }
     }
+
+    
 
 }

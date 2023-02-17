@@ -19,7 +19,7 @@ public class Enemy
         return damage;
     }
 
-    public void HealthAfterDamage(float damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
 

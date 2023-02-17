@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]private EnemyWave[] enemyWave;
     private int currentWave;
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private Camera  maincamera;
+
+    private Camera mainCamera;
+    private float camHeight;
+    private float camWidth;
+    private float buffer = 1f;
+
     void Start()
     {
-        maincamera = Camera.main;
+        mainCamera = Camera.main;
+        camHeight = mainCamera.orthographicSize;
+        camWidth = camHeight * mainCamera.aspect;
+
         SpawnEnemy();
     }
 
@@ -24,17 +33,19 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < enemyWave[currentWave].SpawnRatePerSecond; i++)
         {
             GameObject enemy = enemyPrefab;
-            Instantiate(enemy, new Vector2(maincamera.transform.position.x + Random.Range(-SpawnLocation().x, SpawnLocation().x), maincamera.transform.position.y+ Random.Range(-SpawnLocation().y, SpawnLocation().y)),Quaternion.identity);
+            Instantiate(enemy, new Vector2(SpawnLocation().x,SpawnLocation().y ),Quaternion.identity);
             enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
 
         }
     }
     public Vector2 SpawnLocation()
     {
-        float height = 2f * maincamera.orthographicSize;
-        float width = height * maincamera.aspect;
-        Vector2 measuer = new(height, width);
-        return measuer;
+        float randX = Random.Range(0, 2) == 0 ? -1 : 1;
+        float randY = Random.Range(0, 2) == 0 ? -1 : 1;
+        Vector2 randomLocation = new Vector2(Random.Range(camWidth + buffer, 2 * camWidth + buffer) * randX,
+                                             Random.Range(camHeight + buffer, 2 * camHeight + buffer) * randY);
+        return randomLocation;
+
     }
 
 }

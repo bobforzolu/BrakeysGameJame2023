@@ -6,6 +6,7 @@ using UnityEngine;
 public class AutoAttackData : ScriptableObject
 {
     public float AttackInterval;
+    public float TimeUntileNextAttack;
     public int Damage;
     public float ProjectileSpeed;
     public int ProjectileAmount;

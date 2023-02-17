@@ -6,6 +6,7 @@ public class KnightController :HeroControler
 {
     private HeroStats heroStats;
     private KnightAutoAttack autoAttack;
+    public GameObject AttackPoint;
 
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class KnightController :HeroControler
     // Update is called once per frame
     private void Update()
     {
-        AttackDirection(this.gameObject);   
+        AttackDirection(AttackPoint);   
     }
     private void FixedUpdate()
     {

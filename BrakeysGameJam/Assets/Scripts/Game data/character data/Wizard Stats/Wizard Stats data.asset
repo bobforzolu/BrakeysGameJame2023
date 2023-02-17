@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Wizard Stats data
   m_EditorClassIdentifier: 
   initalSpeed: 3
-  initalAttack: 0
-  initalttakSpeed: 0
+  initalAttack: 5
+  initalttakSpeed: 5
   initalHealth: 0
-  initalMana: 0
-  initaltamina: 0
+  AbilityEnergy: 0

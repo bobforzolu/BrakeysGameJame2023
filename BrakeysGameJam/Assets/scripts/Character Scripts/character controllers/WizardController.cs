@@ -6,11 +6,11 @@ public class WizardController : HeroControler
 {
     private HeroStats heroStats;
     [SerializeField] private GameObject autoattackpoint;
-    private RangedAutoAttacks autoAttacks;
+    private KnightAutoAttack autoAttacks;
     private void Awake()
     {
         heroStats = new(characterData);
-        autoAttacks = GetComponentInChildren<RangedAutoAttacks>();
+        autoAttacks = GetComponentInChildren<KnightAutoAttack>();
     }
     private void Start()
     {

@@ -84,7 +84,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6943306640139331077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081019550185232597}
   m_Layer: 0
-  m_Name: attackpoint
+  m_Name: attackposiotn
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7770432207832376037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.025, z: 0}
+  m_LocalPosition: {x: 0, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -339,8 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackData: {fileID: 11400000, guid: 968c91d4780c53d489b3b7274f029ed9, type: 2}
   Projectile: {fileID: 6592391135928963452, guid: 1513a31032c0fdf4cb16d5ac28e3efe5, type: 3}
-  attackPoint: {fileID: 1081019550185232597}
-  numArrows: 1
+  attackPoint: {fileID: 7770432207832376037}
   angleBetweenArrows: 10
 --- !u!1 &8515004990927521288
 GameObject:

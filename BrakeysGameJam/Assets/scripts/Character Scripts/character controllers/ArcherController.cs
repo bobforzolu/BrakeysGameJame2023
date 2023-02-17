@@ -5,12 +5,12 @@ using UnityEngine;
 public class ArcherController : HeroControler
 {
     private HeroStats heroStats;
-    private RangedAutoAttacks rangedAuto;
+    private ArcherAutoAttacks rangedAuto;
     public GameObject autoattackGameObject;
     private void Awake()
     {
         heroStats = new HeroStats(characterData);
-        rangedAuto = GetComponentInChildren<RangedAutoAttacks>();
+        rangedAuto = GetComponentInChildren<ArcherAutoAttacks>();
         rangedAuto.SetStatData(heroStats);
         LoadData();
     }
