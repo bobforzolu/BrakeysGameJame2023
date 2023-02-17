@@ -57,8 +57,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784814709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.71, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 4.4, z: 0}
+  m_LocalScale: {x: 1, y: 2.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5845442041625049715}
@@ -111,7 +111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5845442041625049715}
-  - component: {fileID: 1823249208}
+  - component: {fileID: 8579592530876779515}
   m_Layer: 0
   m_Name: autoattack
   m_TagString: Untagged
@@ -136,7 +136,7 @@ Transform:
   m_Father: {fileID: 2208035901009306071}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1823249208
+--- !u!114 &8579592530876779515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,13 +145,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2323556742877509773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b7893f0740575348a092ef8cf60c703, type: 3}
+  m_Script: {fileID: 11500000, guid: 10ff4040e55f3e7449f6c53b5b7e17d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackData: {fileID: 11400000, guid: e04af9af7daf7544cac8204c294012a4, type: 2}
-  Projectile: {fileID: 6592391135928963452, guid: 1513a31032c0fdf4cb16d5ac28e3efe5, type: 3}
-  numArrows: 3
-  angleBetweenArrows: 10
+  hitbox: {fileID: 1784814711}
 --- !u!1 &5815590572276079142
 GameObject:
   m_ObjectHideFlags: 0

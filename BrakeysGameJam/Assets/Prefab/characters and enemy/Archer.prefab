@@ -338,8 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackData: {fileID: 11400000, guid: 968c91d4780c53d489b3b7274f029ed9, type: 2}
-  Projectile: {fileID: 6592391135928963452, guid: 1513a31032c0fdf4cb16d5ac28e3efe5, type: 3}
+  Projectile: {fileID: 6772085334336304961, guid: 4e211564543981a4ba573e3881bfbdc4, type: 3}
   attackPoint: {fileID: 7770432207832376037}
+  AutoAttackLeve: 0
   angleBetweenArrows: 10
 --- !u!1 &8515004990927521288
 GameObject:
