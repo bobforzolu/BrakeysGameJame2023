@@ -20,8 +20,14 @@ public class LevelSystem
         experience = 0;
         experienceToNextLevel = 100 ;
         modifier = .5f;
+        OnLevelChanged += LevelSystem_OnLevelChanged;
         
     }
+
+    private void LevelSystem_OnLevelChanged(object sender, EventArgs e)
+    {
+    }
+
     public void Addexperince(int Amount)
     {
         experience += Amount;
@@ -29,13 +35,15 @@ public class LevelSystem
         {
             level++;
             experience = 0;
+            ExperinceModifier();
+
             OnLevelChanged?.Invoke(this, EventArgs.Empty);
         }
         OnExperinceEarned?.Invoke(this, EventArgs.Empty);
     }
     public void ExperinceModifier()
     {
-        experienceToNextLevel += (experienceToNextLevel * .3f);
+        experienceToNextLevel +=  ( experienceToNextLevel * .5f);
     }
     public int GetLevelNumber()
     {

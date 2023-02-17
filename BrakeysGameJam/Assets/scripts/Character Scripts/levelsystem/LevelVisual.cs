@@ -16,11 +16,13 @@ public class LevelVisual : MonoBehaviour
     public void SetLevel(int level)
     {
         string text = "level: " + level;
+        expBar.maxValue = levelSystem.GetExperineceToNextLevel();
         textMeshPro.text = text;
     }
     public void SetExperince(int experience)
     {
         expBar.value = experience;
+       
     }
     // Update is called once per frame
     public void SetLevelSystem(LevelSystem levelSystem)
