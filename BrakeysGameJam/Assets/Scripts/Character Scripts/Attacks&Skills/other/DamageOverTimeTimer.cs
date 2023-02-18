@@ -36,7 +36,6 @@ public class DamageOverTimeTimer : MonoBehaviour
             if(attackTimer < 0)
             {
                 hitBoxDetection.DoDamage();
-                Debug.Log("damage :"+hitBoxDetection.Damage());
                attackTimer =  baseAttackInterval();
             }
             else

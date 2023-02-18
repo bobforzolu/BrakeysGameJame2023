@@ -36,7 +36,8 @@ public class SkillAracherArrowRain : MonoBehaviour
         if(heroStats.GetEnergy() > arrowrainData.EnergyConsumption)
         {
             heroStats.Abilityisused(energycost);
-          GameObject arrowrain =  ObjectPulling.instance.SpawnFromPool("Arrow rain", positiono,Quaternion.identity);
+            GameObject arrowrain =  ObjectPulling.instance.SpawnFromPool("Arrow rain", positiono,Quaternion.identity);
+            arrowrain.GetComponent<DamageOverTimeTimer>().GetComponent<DamageOverTimeTimer>().SetHeroStats(heroStats);
             arrowrain.GetComponentInChildren<HitBoxDetection>().UpdateDamage(AttackDamage());
 
         }
@@ -45,7 +46,6 @@ public class SkillAracherArrowRain : MonoBehaviour
     {
         this.heroStats = heroStats;
 
-        AbilityPrefab.GetComponent<DamageOverTimeTimer>().GetComponent<DamageOverTimeTimer>().SetHeroStats(heroStats);
     }
 
 }

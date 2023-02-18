@@ -20,7 +20,6 @@ public class SelectUpgrades : MonoBehaviour
         if(statsUpgrade!= null)
         {
         Description.text = statsUpgrade.description + statsUpgrade.StatsIncreaseAmount.ToString();
-        Debug.Log(heroStats);
 
         }
     }
