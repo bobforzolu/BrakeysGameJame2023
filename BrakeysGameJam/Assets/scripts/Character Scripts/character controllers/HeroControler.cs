@@ -16,6 +16,7 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     private HeroHealthVisual healthVisual;
     public LevelSystemController levelSystem { get; private set; }
     protected bool isdead;
+    public bool ispaused;
 
     protected virtual void Awake()
     {
@@ -25,11 +26,29 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     protected virtual void Start()
     {
         LoadData();
+        ispaused= false;
         levelSystem= GetComponent<LevelSystemController>();
         levelSystem.levelSystem.OnLevelChanged += LevelSystem_OnLevelChanged;
         healthVisual = GetComponentInChildren<HeroHealthVisual>();
         healthVisual.SetHeroStats(heroStats);
+        input.playerInputActions.player.pause.performed += Pause_performed;
     }
+
+    private void Pause_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        if (!ispaused)
+        {
+            CharacterManager.instance.PauseMenue.SetActive(true);
+            Time.timeScale= 0f;
+        }
+        else if(ispaused)
+        {
+            CharacterManager.instance.PauseMenue.SetActive(false);
+            Time.timeScale = 1.0f;
+        }
+
+    }
+
     private void OnDisable()
     {
         levelSystem.levelSystem.OnLevelChanged -= LevelSystem_OnLevelChanged;

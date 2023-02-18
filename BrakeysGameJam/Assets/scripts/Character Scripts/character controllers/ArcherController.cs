@@ -21,6 +21,11 @@ public class ArcherController : HeroControler,IDamagable
         rangedAuto.SetStatData(heroStats);
         rangedAuto.SetBombability(arrowBomb);
     }
+    private void OnDisable()
+    {
+        input.playerInputActions.player.Skill1.started -= Skill1_started;
+        input.playerInputActions.player.Skill1.canceled -= Skill1_canceled;
+    }
     protected override void Start()
     {
         base.Start();

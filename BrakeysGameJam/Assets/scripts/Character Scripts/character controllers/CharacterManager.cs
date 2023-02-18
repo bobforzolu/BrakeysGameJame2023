@@ -26,6 +26,7 @@ public  class CharacterManager : MonoBehaviour
     private int prestige;
     public HeroStats heroStats { get; private set; }
     public StatsGraphic statsGraphic;
+    public GameObject PauseMenue;
     private void Awake()
     {
         
@@ -49,7 +50,7 @@ public  class CharacterManager : MonoBehaviour
     }
     public void SummonCharacter()
     {
-        if(characterLineUP.Count <= 0)
+        if(characterLineUP.Count >= 0)
         {
         // get the max character in the list
         int maxRange = characterLineUP.Count ;
@@ -67,7 +68,7 @@ public  class CharacterManager : MonoBehaviour
          skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
         statsGraphic.SetHeroStats(heroStats);
         heroControler.OnPlayerDeath += HeroControler_OnPlayerDeath;
-
+        PauseMenue.SetActive(false);
 
         }
         else

@@ -11,13 +11,15 @@ public class EnemySpawner : MonoBehaviour
     private Camera mainCamera;
     private float camHeight;
     private float camWidth;
-    public float buffer = 5f;
 
     private float timer;
     private float SpawnTimer = 15f;
     private bool canSpawn;
+    private GameObject player;
+    private Transform playerpos;
 
     public int currentEnemy;
+    public float spawnRadius = 2f;
 
     void Start()
     {
@@ -55,11 +57,15 @@ public class EnemySpawner : MonoBehaviour
     }
     public Vector2 SpawnLocation()
     {
-        float randX = Random.Range(0, 2) == 0 ? -1 : 1;
-        float randY = Random.Range(0, 2) == 0 ? -1 : 1;
-        Vector2 randomLocation = new Vector2(Random.Range(camWidth + buffer, 2 * camWidth + buffer) * randX,
-                                             Random.Range(camHeight + buffer, 2 * camHeight + buffer) * randY);
-        return randomLocation;
+       
+        Vector2 cameraPosition = mainCamera.transform.position;
+        float cameraHeight = mainCamera.orthographicSize;
+        float cameraWidth = cameraHeight * mainCamera.aspect;
+
+        // Calculate a random position around the camera view
+        Vector2 spawnPosition = cameraPosition + new Vector2(Random.Range(-cameraWidth, cameraWidth), Random.Range(-cameraHeight, cameraHeight)).normalized * spawnRadius;
+
+        return spawnPosition;
 
     }
 

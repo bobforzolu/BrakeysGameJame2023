@@ -40,11 +40,20 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "pause",
+                    "type": "Button",
+                    "id": "45161465-5c09-4f6b-9f73-45d0e29441a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "arrowkey",
+                    "name": "wasd",
                     "id": "7cca09bb-79b1-4079-a2d7-4a6e6fb194ab",
                     "path": "2DVector",
                     "interactions": "",
@@ -128,6 +137,17 @@
                     "processors": "",
                     "groups": "keyboard",
                     "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "723c0c6b-965b-4bdd-8282-6f0616296404",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
