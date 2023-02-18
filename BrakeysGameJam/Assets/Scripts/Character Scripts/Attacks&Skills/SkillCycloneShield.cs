@@ -15,7 +15,6 @@ public class SkillCycloneShield : MonoBehaviour
     {
         BaseDamage = skilldata.Damage;
         damageOverTime = GetComponentInChildren<DamageOverTimeTimer>();
-        ActivateSkill();
     }
     public void ActivateSkill()
     {

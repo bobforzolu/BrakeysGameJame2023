@@ -13,7 +13,6 @@ public class PopupVisual : MonoBehaviour
 
     private void Start()
     {
-        Damagetext = GetComponent<TextMeshPro>();
         
         
     }
@@ -35,6 +34,7 @@ public class PopupVisual : MonoBehaviour
 
     public void Disableobj()
     {
+        startmoving= false;
         gameObject.SetActive(false);
     }
 }

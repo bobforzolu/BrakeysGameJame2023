@@ -78,6 +78,7 @@ public class EnemyController : MonoBehaviour, IDamagable
        
          if(enemy.currentHealth < 0 && !isDead)
         {
+            ObjectPulling.instance.SpawnFromPool("Exp", transform.position, Quaternion.identity);
             isDead = true;
             gameObject.SetActive(false);
 

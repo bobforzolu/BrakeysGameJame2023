@@ -10,13 +10,13 @@ public class UpgradeVisuals : MonoBehaviour
     private void Start()
     {
        
-        UpgradeOptionCanvas.SetActive(false);
     }
     public void GetLevelSytem(LevelSystem levelSystem)
     {
         this.levelSystem = levelSystem;
 
         levelSystem.OnLevelChanged += LevelSystem_OnLevelChanged;
+        UpgradeOptionCanvas.SetActive(false);
     }
    
     private void LevelSystem_OnLevelChanged(object sender, System.EventArgs e)
