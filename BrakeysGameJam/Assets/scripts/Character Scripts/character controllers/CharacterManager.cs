@@ -19,6 +19,7 @@ public  class CharacterManager : MonoBehaviour
     [SerializeField]private List<GameObject> characterLineUP = new List<GameObject>();
     private List<GameObject> UsedCharachters= new List<GameObject>();
     public GameObject SelectedCharacter;
+    public SkillIcone skillUi;
     private int characterIndex;
     private int prestige;
     private void Awake()
@@ -55,6 +56,8 @@ public  class CharacterManager : MonoBehaviour
         characterLineUP.RemoveAt(characterIndex);
         // add it to the used character list
         UsedCharachters.Add(SelectedCharacter);
+        skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
+        
 
 
     }

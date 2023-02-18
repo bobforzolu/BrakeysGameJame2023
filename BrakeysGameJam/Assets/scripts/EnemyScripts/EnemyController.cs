@@ -73,11 +73,13 @@ public class EnemyController : MonoBehaviour, IDamagable
         
         ///enemy takes damage if 
         enemy.TakeDamage(damage);
-        if(enemy.currentHealth < 0 && !isDead)
+        GameObject popup = ObjectPulling.instance.SpawnFromPool("popup", transform.position, Quaternion.identity);
+        popup.GetComponent<PopupVisual>().setDamage(damage);
+       
+         if(enemy.currentHealth < 0 && !isDead)
         {
             isDead = true;
             gameObject.SetActive(false);
-            ObjectPulling.instance.SpawnFromPool("Exp",transform.position,Quaternion.identity);
 
         }
     }
