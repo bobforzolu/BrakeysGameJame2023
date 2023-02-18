@@ -6,7 +6,7 @@ public class LevelSystemController : MonoBehaviour
 {
     
     public LevelSystem levelSystem { get; private set; }
-   private ExperinceCollector experinceCollector;
+    private ExperinceCollector experinceCollector;
     private LevelVisual levelVisual;
     private UpgradeVisuals upgradeVisuals;
     private GameObject ui;
