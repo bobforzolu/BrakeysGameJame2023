@@ -28,8 +28,6 @@ public class SkillCycloneShield : MonoBehaviour
         {
             isSkillactive= true;
             cyclone.SetActive(true);
-            damageOverTime.SetHeroStats(heroStats);
-            detection.UpdateDamage(AttackDamage());
             
 
         }
@@ -37,7 +35,7 @@ public class SkillCycloneShield : MonoBehaviour
     }
     public int AttackDamage()
     {
-        int attack = (int)(BaseDamage * ( 1 + (heroStats.GetAttackDamage() / 100)));
+        int attack = (int)(BaseDamage * ( 2 + (heroStats.GetAttackDamage() / 100)));
         return attack;
     }
 
@@ -47,6 +45,8 @@ public class SkillCycloneShield : MonoBehaviour
         if (isSkillactive && heroStats.GetEnergy() > 0)
         {
             heroStats.Abilityisused((Time.deltaTime * consumption));
+            damageOverTime.SetHeroStats(heroStats);
+            detection.UpdateDamage(AttackDamage());
         }
         else
         {

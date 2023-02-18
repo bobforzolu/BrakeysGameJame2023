@@ -15,6 +15,6 @@ MonoBehaviour:
   EnemySprite: {fileID: -1313875999, guid: 70d22c427fbf8c94b92a4e64452e253f, type: 3}
   animationClip: {fileID: 9100000, guid: 0831eec373a19514684f37fe6096e0b2, type: 2}
   Color: {r: 0.96608496, g: 0, b: 1, a: 1}
-  speed: 2
+  speed: 4
   health: 10
   Damage: 5
