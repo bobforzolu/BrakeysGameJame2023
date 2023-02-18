@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95e9ae34891159a4abe82496ec309eed
+guid: c50b8e177a8c7f44f90bc35010485743
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: archer-Sheet_0
+      name: Goblin-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6150cdb944e8c304ba95aa85356c1de1
-      internalID: -1440905418
+      spriteID: a7e93a1e216dc2644b2b20c2f938ecc4
+      internalID: 817450139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_1
+      name: Goblin-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1feeaa536ee4bbf43b694265d28ff547
-      internalID: 171326097
+      spriteID: 86f2871f14e1a374e85a29d1705aec98
+      internalID: 2006865336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_2
+      name: Goblin-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 454ef1070270817408c0451b9f84fe97
-      internalID: 1374224765
+      spriteID: 71851e5af4790ac45985c53143e12b48
+      internalID: -1234830151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_3
+      name: Goblin-Sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09c28fea663dcbb439233d75d6102dd0
-      internalID: 1156807588
+      spriteID: 3f4ad150b6caa7c4ba63241a595576ea
+      internalID: 1014708462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_4
+      name: Goblin-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5481b5c3afe4a04fa38b34a95dd4a00
-      internalID: -1703627490
+      spriteID: 12a80d695c1fa2049b560ae434c0994a
+      internalID: -902768258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_5
+      name: Goblin-Sheet_5
       rect:
         serializedVersion: 2
         x: 16
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 509aa31683744ab40baa6e88b3763e38
-      internalID: 534679850
+      spriteID: dec23bca84fc17544be89bf21b167fd4
+      internalID: -1891066220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_6
+      name: Goblin-Sheet_6
       rect:
         serializedVersion: 2
         x: 32
@@ -269,14 +269,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8af52547ccd19a4eb46e00eada379f4
-      internalID: 1299216765
+      spriteID: 39f99854d1e222b418ea4454a2a1f049
+      internalID: -1292210259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_7
+      name: Goblin-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee9cc7d3790bef4baa85e8014d326bd
+      internalID: 298576870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin-Sheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -290,14 +311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6043b412abe0e644f89c21f80cf7c037
-      internalID: 1306864559
+      spriteID: ba9d89482c53b3c4788f0594a7a0cdb1
+      internalID: -1801602612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_8
+      name: Goblin-Sheet_9
       rect:
         serializedVersion: 2
         x: 16
@@ -311,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4a330519153c14b9b8b6847e6a4582
-      internalID: -665515338
+      spriteID: 1eeb47aa86e5a2344971cb1fc59ca784
+      internalID: -376595955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_9
+      name: Goblin-Sheet_10
       rect:
         serializedVersion: 2
         x: 32
@@ -332,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f0382f375c36bc4f8604da49f160bd7
-      internalID: 812097520
+      spriteID: 6787e231486d59b429dc349bb11661e9
+      internalID: 1454289211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_10
+      name: Goblin-Sheet_11
       rect:
         serializedVersion: 2
         x: 48
@@ -353,8 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cbb32b78c7d7746b03abe969f0005d
-      internalID: -496696616
+      spriteID: f612707bffb86334ba07582e34fb6832
+      internalID: 2069343000
       vertices: []
       indices: 
       edges: []
@@ -370,17 +391,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      archer-Sheet_0: -1440905418
-      archer-Sheet_1: 171326097
-      archer-Sheet_5: 534679850
-      archer-Sheet_6: 1299216765
-      archer-Sheet_7: 1306864559
-      archer-Sheet_3: 1156807588
-      archer-Sheet_10: -496696616
-      archer-Sheet_9: 812097520
-      archer-Sheet_4: -1703627490
-      archer-Sheet_2: 1374224765
-      archer-Sheet_8: -665515338
+      Goblin-Sheet_7: 298576870
+      Goblin-Sheet_10: 1454289211
+      Goblin-Sheet_0: 817450139
+      Goblin-Sheet_11: 2069343000
+      Goblin-Sheet_8: -1801602612
+      Goblin-Sheet_2: -1234830151
+      Goblin-Sheet_3: 1014708462
+      Goblin-Sheet_4: -902768258
+      Goblin-Sheet_5: -1891066220
+      Goblin-Sheet_1: 2006865336
+      Goblin-Sheet_6: -1292210259
+      Goblin-Sheet_9: -376595955
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
