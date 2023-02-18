@@ -17,4 +17,4 @@ MonoBehaviour:
   maxDuration: 6
   maxAttackInterval: 0.3
   Damage: 5
-  SkillConsummption: 0
+  EnergyConsumption: 15

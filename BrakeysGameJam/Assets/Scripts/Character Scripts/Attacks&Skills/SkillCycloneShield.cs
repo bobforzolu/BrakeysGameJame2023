@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SkillCycloneShield : MonoBehaviour
@@ -10,11 +11,16 @@ public class SkillCycloneShield : MonoBehaviour
     public GameObject cyclone;
     private int BaseDamage;
     private DamageOverTimeTimer damageOverTime;
-    public bool isSkillactive { get; private set; }
+    private HitBoxDetection detection;
+    public bool isSkillactive;
+    private int consumption;
     void Start()
     {
+
         BaseDamage = skilldata.Damage;
+        consumption = skilldata.EnergyConsumption;
         damageOverTime = GetComponentInChildren<DamageOverTimeTimer>();
+        detection= GetComponentInChildren<HitBoxDetection>();
     }
     public void ActivateSkill()
     {
@@ -23,9 +29,11 @@ public class SkillCycloneShield : MonoBehaviour
             isSkillactive= true;
             cyclone.SetActive(true);
             damageOverTime.SetHeroStats(heroStats);
-            damageOverTime.SetTimers();
+            detection.UpdateDamage(AttackDamage());
+            
 
         }
+        
     }
     public int AttackDamage()
     {
@@ -36,11 +44,15 @@ public class SkillCycloneShield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isSkillactive)
+        if (isSkillactive && heroStats.GetEnergy() > 0)
         {
-            cyclone.GetComponentInChildren<HitBoxDetection>().UpdateDamage(AttackDamage());
-
+            heroStats.Abilityisused((Time.deltaTime * consumption));
         }
+        else
+        {
+            cyclone.SetActive(false);
+        }
+
         
         if(!cyclone.activeInHierarchy)
         {

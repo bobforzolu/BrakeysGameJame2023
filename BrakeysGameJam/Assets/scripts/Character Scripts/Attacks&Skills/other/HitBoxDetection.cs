@@ -72,6 +72,7 @@ public class HitBoxDetection : MonoBehaviour
     }
     public void UpdateDamage(int newdamage)
     {
+        Debug.Log(newdamage);
         damage = newdamage;
     }
     public int Damage()

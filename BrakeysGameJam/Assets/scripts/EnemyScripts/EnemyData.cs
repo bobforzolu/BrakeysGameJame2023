@@ -12,4 +12,10 @@ public class EnemyData : ScriptableObject
     public float speed;
     public int health;
     public int Damage;
+
+
+    public void RandomColor()
+    {
+
+    }
 }

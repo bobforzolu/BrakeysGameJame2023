@@ -44,9 +44,13 @@ public class EnemySpawner : MonoBehaviour
                 enemyWave[currentWave].summonedEnemies++;
             
             }
-            if (enemyWave[currentWave].summonedEnemies / enemyWave[currentWave].EnemyCount > 0.7f && enemyWave.Length < currentEnemy)
+            if (enemyWave[currentWave].summonedEnemies / enemyWave[currentWave].EnemyCount > 0.7f &&  currentWave< enemyWave.Length)
             { 
                 currentWave++;
+
+            }
+            else
+            {
 
             }
             

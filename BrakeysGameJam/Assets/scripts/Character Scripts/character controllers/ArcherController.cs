@@ -38,8 +38,9 @@ public class ArcherController : HeroControler
         arrowRain.AimAbility();
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         AttackDirection(autoattackGameObject);
     }
     private void FixedUpdate()

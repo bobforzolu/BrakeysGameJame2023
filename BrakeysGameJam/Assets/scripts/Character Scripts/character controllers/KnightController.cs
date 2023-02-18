@@ -22,13 +22,14 @@ public class KnightController :HeroControler
 
     }
     // Update is called once per frame
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         AttackDirection(AttackPoint);   
     }
     private void FixedUpdate()
     {
-        Movement(characterData.initalSpeed);
+        Movement(heroStats.GetMovementSpeed());
     }
     public override void AbilityOne()
     {

@@ -8,7 +8,7 @@ public class PlayerUpgradeManager : MonoBehaviour
    [SerializeField] private List<StatsUpgrade> statsUpgrades = new List<StatsUpgrade>();
     public List<SelectUpgrades> UpgradeButtons = new List<SelectUpgrades>();
     private List<StatsUpgrade> selectedUpgrades= new List<StatsUpgrade>();
-    private GameObject canvas;
+    public GameObject upgradeCanvas;
     public static PlayerUpgradeManager instance;
     
 
@@ -18,8 +18,7 @@ public class PlayerUpgradeManager : MonoBehaviour
     }
     private void Start()
     {
-        canvas = GameObject.FindGameObjectWithTag("Ui").transform.Find("Upgrade ui canvas").gameObject.transform.Find("upgradepanel").gameObject;
-        UpgradeButtons.AddRange(canvas.GetComponentsInChildren<SelectUpgrades>());
+       
 
     }
 
@@ -33,9 +32,9 @@ public class PlayerUpgradeManager : MonoBehaviour
             {
                 selectedUpgrades.Add(randomUpgrade);
             }
-            SetUpgradesToButton();
-            canvas.SetActive(true);
         }
+            SetUpgradesToButton();
+            upgradeCanvas.SetActive(true);
         yield return    null;
 
     }
