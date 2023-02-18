@@ -50,8 +50,8 @@ public class EnemyController : MonoBehaviour, IDamagable
 
         if (enemyData.EnemySprite!= null)
         {
-        enemysprite.sprite = enemyData.EnemySprite;
-            enemysprite.color = enemyData.Color;
+            enemysprite.sprite = enemyData.EnemySprite;
+            enemysprite.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.75f, 1f);
 
         }
 
