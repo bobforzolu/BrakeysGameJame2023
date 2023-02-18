@@ -7,17 +7,21 @@ public class UpgradeVisuals : MonoBehaviour
     [SerializeField]private GameObject UpgradeOptionCanvas;
     private LevelSystem levelSystem;
 
-   
+    private void Start()
+    {
+       
+        UpgradeOptionCanvas.SetActive(false);
+    }
     public void GetLevelSytem(LevelSystem levelSystem)
     {
         this.levelSystem = levelSystem;
 
         levelSystem.OnLevelChanged += LevelSystem_OnLevelChanged;
     }
-
+   
     private void LevelSystem_OnLevelChanged(object sender, System.EventArgs e)
     {
-        UpgradeOptionCanvas.SetActive(true);
+        StartCoroutine( PlayerUpgradeManager.instance.SelectUpgrades());
     }
     private void OnDestroy()
     {

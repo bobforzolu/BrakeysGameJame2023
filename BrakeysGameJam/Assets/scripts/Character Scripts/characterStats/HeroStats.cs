@@ -46,6 +46,7 @@ public class HeroStats
     public int GetHealth(){
         return health;
     }
+  
     public void IncreasAllStats(int statIncrease)
     {
         attack += statIncrease;
@@ -53,6 +54,14 @@ public class HeroStats
         health += statIncrease;
         movement += statIncrease;
         abiltyenergy += statIncrease;
+    }
+    public void levelStatincrease()
+    {
+        attack += 1;
+        abiltyenergy += 1;
+        health += 2;
+
+
     }
     public void IncreaseAttack( int increase)
     {
@@ -77,6 +86,11 @@ public class HeroStats
     public void TakeDamage(int damage)
     {
         health -= damage;
+    }
+
+    public void ToStringStats()
+    {
+        Debug.Log($"hp: {health} \n attack: {attack} \n Energy: {abiltyenergy}\n attackspeed: {attackSpeed}\n movement: {movement}");
     }
    
 }

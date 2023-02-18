@@ -15,5 +15,5 @@ MonoBehaviour:
   initalSpeed: 3
   initalAttack: 5
   initalttakSpeed: 5
-  initalHealth: 0
-  AbilityEnergy: 0
+  initalHealth: 15
+  AbilityEnergy: 15

@@ -6,15 +6,19 @@ using Cinemachine;
 
 public  class CharacterManager : MonoBehaviour
 {
-    public CharacterManager instance { get; private set; }
-    public EventHandler OnCharacterSpawn { get; private set; }
+    public static CharacterManager instance { get; private set; }
+    public event EventHandler<OncharterlevelArgs> OnCharacterSpawn;
+    public class OncharterlevelArgs: EventArgs
+    {
+        public HeroStats heroStats;
+    }
 
     public CinemachineVirtualCamera cam;
 
     [SerializeField] private GameObject[] character;
     [SerializeField]private List<GameObject> characterLineUP = new List<GameObject>();
     private List<GameObject> UsedCharachters= new List<GameObject>();
-    public GameObject SelectedCharacter { get; private set; }
+    public GameObject SelectedCharacter;
     private int characterIndex;
     private int prestige;
     private void Awake()
@@ -26,6 +30,7 @@ public  class CharacterManager : MonoBehaviour
     {
         SetUpCharacter();
     }
+    
     public void SetUpCharacter()
     {
         for (int i = 0; i < character.Length; i++)
@@ -50,6 +55,11 @@ public  class CharacterManager : MonoBehaviour
         characterLineUP.RemoveAt(characterIndex);
         // add it to the used character list
         UsedCharachters.Add(SelectedCharacter);
+
+
+    }
+    public void SetUpExpt()
+    {
 
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Ui
   - UpGradeUi
+  - CinemachineCamera
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Expcollector
   - Items
   - Enemy
-  - 
+  - shield
   - 
   - 
   - 
@@ -44,4 +45,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: enemy
+    uniqueID: 2044434499
+    locked: 0
+  - name: player
+    uniqueID: 1965284419
+    locked: 0
+  - name: skill
+    uniqueID: 1557869195
+    locked: 0
+  - name: ui
+    uniqueID: 267455719
     locked: 0

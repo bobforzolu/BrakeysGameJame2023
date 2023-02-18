@@ -5,8 +5,7 @@ using UnityEngine;
 public class arrowHitbox : MonoBehaviour
 {
     private IDamagable enemies;
-    public int damage;
-    public bool enemyisHit;
+    private int damage;
    
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,12 +19,15 @@ public class arrowHitbox : MonoBehaviour
                 Destroy(gameObject);
 
             }
-            enemyisHit = true;
 
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+    }
+    private void Update()
+    {
+        
     }
     public void setDamade(int damage)
     {

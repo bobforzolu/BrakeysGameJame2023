@@ -44,7 +44,7 @@ public class CharacterControler : MonoBehaviour
     }
     public void Attack()
     {
-        autoattackHitbox.GetComponent<HitBoxDetection>().DoDamage(4);
+        autoattackHitbox.GetComponent<HitBoxDetection>().SetableDoDamage(4);
     }
 
 }
