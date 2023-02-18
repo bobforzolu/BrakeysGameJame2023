@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77abb81d038fba041bb03ca8f3947895
+guid: a248a678ff32ae4428eaec8d18a7c5d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,91 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knight-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8b89a878e64e6e48ae3a205cb4d98be
-      internalID: 321671338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 315daa5ff7dbb0146bf0332aafe51e06
-      internalID: 1796565692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef892b640918c994f84031f26d24d2a4
-      internalID: 1058946027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c83cf91a188bd2f479d22fc33c9a5d2c
-      internalID: -583698731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight-Sheet_4
+      name: knight-abilities-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -227,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8493cc3c6f214404886ff355bf985616
-      internalID: 1160430605
+      spriteID: b7f37facbf9a9534194bef76ff2ae3ef
+      internalID: -817228066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_5
+      name: knight-abilities-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -248,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d9d38f37fee59419d4f6d95aa30ef9
-      internalID: -189339094
+      spriteID: c2deedc830825f44ebf4fa157ce0e075
+      internalID: -724044818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_6
+      name: knight-abilities-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -269,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612581b429f9c2c4183ed440ec5d2c00
-      internalID: 1436098487
+      spriteID: b1f690433a83db64da0d60009b58302b
+      internalID: 966837588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_7
+      name: knight-abilities-Sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -290,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fdaf7c358039e44480bf91f380ca891
-      internalID: -1764976169
+      spriteID: 51de799bae63aee4a878684d1c18538e
+      internalID: -62082576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_8
+      name: knight-abilities-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -311,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806743d4044145e49b7641d861bd327c
-      internalID: -591592853
+      spriteID: a7b6edabd4e55d745991cb436caec88b
+      internalID: -333601816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_9
+      name: knight-abilities-Sheet_5
       rect:
         serializedVersion: 2
         x: 16
@@ -332,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be8d51473e7652d428fc7f296fa1dc20
-      internalID: 368861936
+      spriteID: fb5281084898c104bacb3e631bc06514
+      internalID: 1286701905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_10
+      name: knight-abilities-Sheet_6
       rect:
         serializedVersion: 2
         x: 32
@@ -353,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85fbabc20cd033f429ee6a5901e48cdd
-      internalID: 545236050
+      spriteID: 1125690f0370ad544adca091ea19e945
+      internalID: -233253657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight-Sheet_11
+      name: knight-abilities-Sheet_7
       rect:
         serializedVersion: 2
         x: 48
@@ -374,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b277135bf0d7ade469988e0816326294
-      internalID: 15049823
+      spriteID: 57bb4ca9137723c459acb3e12175646a
+      internalID: 874519875
       vertices: []
       indices: 
       edges: []
@@ -391,18 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knight-Sheet_0: 321671338
-      knight-Sheet_7: -1764976169
-      knight-Sheet_10: 545236050
-      knight-Sheet_1: 1796565692
-      knight-Sheet_5: -189339094
-      knight-Sheet_3: -583698731
-      knight-Sheet_4: 1160430605
-      knight-Sheet_8: -591592853
-      knight-Sheet_2: 1058946027
-      knight-Sheet_11: 15049823
-      knight-Sheet_6: 1436098487
-      knight-Sheet_9: 368861936
+      knight-abilities-Sheet_6: -233253657
+      knight-abilities-Sheet_2: 966837588
+      knight-abilities-Sheet_7: 874519875
+      knight-abilities-Sheet_0: -817228066
+      knight-abilities-Sheet_3: -62082576
+      knight-abilities-Sheet_5: 1286701905
+      knight-abilities-Sheet_1: -724044818
+      knight-abilities-Sheet_4: -333601816
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
