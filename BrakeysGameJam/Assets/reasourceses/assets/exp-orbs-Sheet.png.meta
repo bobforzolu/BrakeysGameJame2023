@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95e9ae34891159a4abe82496ec309eed
+guid: 273098a2a71587349be491fca8f12c3b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,160 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: archer-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6150cdb944e8c304ba95aa85356c1de1
-      internalID: -1440905418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1feeaa536ee4bbf43b694265d28ff547
-      internalID: 171326097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 454ef1070270817408c0451b9f84fe97
-      internalID: 1374224765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09c28fea663dcbb439233d75d6102dd0
-      internalID: 1156807588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5481b5c3afe4a04fa38b34a95dd4a00
-      internalID: -1703627490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 509aa31683744ab40baa6e88b3763e38
-      internalID: 534679850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8af52547ccd19a4eb46e00eada379f4
-      internalID: 1299216765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: archer-Sheet_7
+      name: exp-orbs-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6043b412abe0e644f89c21f80cf7c037
-      internalID: 1306864559
+      spriteID: f91571335fac1744c8dbe65658c80590
+      internalID: 1710951871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_8
+      name: exp-orbs-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 80
         y: 0
-        width: 16
-        height: 16
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4a330519153c14b9b8b6847e6a4582
-      internalID: -665515338
+      spriteID: 955d2eda1ba864844af470a2ec5426dc
+      internalID: -50642866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_9
+      name: exp-orbs-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 160
         y: 0
-        width: 16
-        height: 16
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f0382f375c36bc4f8604da49f160bd7
-      internalID: 812097520
+      spriteID: 8db9f51c92adb304595300fe500ea785
+      internalID: -583375635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_10
+      name: exp-orbs-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 240
         y: 0
-        width: 16
-        height: 16
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +206,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cbb32b78c7d7746b03abe969f0005d
-      internalID: -496696616
+      spriteID: 3f8482c7be1e9fe428f0b8e4e3f2ef4f
+      internalID: -681668088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exp-orbs-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8c214b01dc12b4d911e76d9c4c98e9
+      internalID: -2011733011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exp-orbs-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528f7b8ae6afb1d4cbc07abdcb9e34e7
+      internalID: 1852318927
       vertices: []
       indices: 
       edges: []
@@ -370,17 +265,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      archer-Sheet_0: -1440905418
-      archer-Sheet_1: 171326097
-      archer-Sheet_5: 534679850
-      archer-Sheet_6: 1299216765
-      archer-Sheet_7: 1306864559
-      archer-Sheet_3: 1156807588
-      archer-Sheet_10: -496696616
-      archer-Sheet_9: 812097520
-      archer-Sheet_4: -1703627490
-      archer-Sheet_2: 1374224765
-      archer-Sheet_8: -665515338
+      exp-orbs-Sheet_3: -681668088
+      exp-orbs-Sheet_1: -50642866
+      exp-orbs-Sheet_4: -2011733011
+      exp-orbs-Sheet_5: 1852318927
+      exp-orbs-Sheet_0: 1710951871
+      exp-orbs-Sheet_2: -583375635
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

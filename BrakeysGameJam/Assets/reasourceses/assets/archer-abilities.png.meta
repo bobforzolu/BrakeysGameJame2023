@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44d7554cbc29069419e26a935c6a651f
-      internalID: -350011393
+      spriteID: bf8f4ac2be1100a48952e3b884d5a529
+      internalID: 2071234276
       vertices: []
       indices: 
       edges: []
@@ -164,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70376eaf9e827e8458f701ec15205cfd
-      internalID: -411995630
+      spriteID: 847d74e5308521c41b1a37dda5d2ebc5
+      internalID: 1283007068
       vertices: []
       indices: 
       edges: []
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf5d21d307477e8489ac4ce75aa774f4
-      internalID: -1904740998
+      spriteID: 87bbce70a16ad8947b37fe2dbb9c54e2
+      internalID: 360735986
       vertices: []
       indices: 
       edges: []
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e99bc9ad949fa7040a1e67caab48ba61
-      internalID: 1700352765
+      spriteID: de5c60d024a716b42991d80dcf1e2dac
+      internalID: -1732505403
       vertices: []
       indices: 
       edges: []
@@ -216,8 +216,8 @@ TextureImporter:
       name: archer-abilities_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -227,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec14a35e487d9842ab72067e55da7f4
-      internalID: -375086122
+      spriteID: f4e754297b463a342a164a7f4e3700cd
+      internalID: 634968490
       vertices: []
       indices: 
       edges: []
@@ -237,6 +237,216 @@ TextureImporter:
       name: archer-abilities_5
       rect:
         serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3135dc2dc54be4429975b03ec567527
+      internalID: -744915798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e104f5f396f294e80aa48b078acc55
+      internalID: -1120073836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d6d80d439c82b4195c6f905ab0a5fd
+      internalID: -1799878466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d01105a2cff38d4eab3c929c1d96e58
+      internalID: -1949039163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98295db34c165774b93110d609dc052b
+      internalID: -1362579650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bc7e2512837ef4e8dba6a21729264c
+      internalID: -1065189723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe2ae442e71de1489d9b367b4fa190e
+      internalID: 1031496879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3f5e9df9143b14299cf342de3d5d25
+      internalID: -1358173653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838157c9ccb6d1c4291eb84a4479ced9
+      internalID: -1603075366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41c6c2ba2f4a8e44917392def481b6a
+      internalID: 731548073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_15
+      rect:
+        serializedVersion: 2
         x: 16
         y: 48
         width: 16
@@ -248,14 +458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69080d821d5b0a547b0efea9d704131a
-      internalID: 918669273
+      spriteID: f16b89beaf965824a9e7efe1979bb479
+      internalID: 1209764474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_6
+      name: archer-abilities_16
       rect:
         serializedVersion: 2
         x: 32
@@ -269,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55cc62ea091293f4488b78635c9203b6
-      internalID: 209031920
+      spriteID: 993edffd4570b7f48899251f9ac900ae
+      internalID: -1365111048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_7
+      name: archer-abilities_17
       rect:
         serializedVersion: 2
         x: 48
@@ -290,14 +500,224 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51999d55cf16ae24db65c92fdb6f246c
-      internalID: 1557155993
+      spriteID: 7fdfcf4efc90ff543bf0d6597541f909
+      internalID: 519389516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_8
+      name: archer-abilities_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0571cfb6a120b3540a1c6f98d16c6be0
+      internalID: 1246656423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e022592ec01dbcd40a4888787607101b
+      internalID: -1279291443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abf817703696ed439ec747dea669b34
+      internalID: -1367994295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e8b156c23a49141a273852cd0d51e9
+      internalID: 1505063880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbdf0f140d5f8346825674eed330cd7
+      internalID: 917054179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045869dfc0e60e94abefae7f6f09d9fc
+      internalID: 1631142872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7efea2b988bdd440b6cef7feb39aa72
+      internalID: 286202685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15661d7876fc6f43b1128bfbf9280df
+      internalID: 1412751146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6fa7026e716f34083717c3ea0396ea
+      internalID: 1969106635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509243a66d2e8f14eb781da68d03a9ab
+      internalID: 469165641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_28
       rect:
         serializedVersion: 2
         x: 0
@@ -311,14 +731,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca37a2bf002de7a49976315c84bbb48b
-      internalID: 1140810457
+      spriteID: 3ee019cce3f2c834095c51c4b6a26a73
+      internalID: -1107641958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_9
+      name: archer-abilities_29
       rect:
         serializedVersion: 2
         x: 16
@@ -332,14 +752,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1caec6344da8ae24aaa826cafdc49b05
-      internalID: 1306329212
+      spriteID: 814052cd228e0ac499cbfdc08100ad2b
+      internalID: 204210135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_10
+      name: archer-abilities_30
       rect:
         serializedVersion: 2
         x: 32
@@ -353,14 +773,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa8ee0dc8d53bc049baaa68ace679a07
-      internalID: 13381219
+      spriteID: a7c64fee109d0cd4eb5fb9c87adfefb2
+      internalID: 1312187826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_11
+      name: archer-abilities_31
       rect:
         serializedVersion: 2
         x: 48
@@ -374,14 +794,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64955e5284198ac4296ed71739386147
-      internalID: 587915647
+      spriteID: 51ace5adffca22544a663cae422a36de
+      internalID: -583173714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_12
+      name: archer-abilities_32
       rect:
         serializedVersion: 2
         x: 64
@@ -395,14 +815,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ae19199309ce34aa02792c478e6ab4
-      internalID: 1645647939
+      spriteID: e5cbad0500708e84aa562da06e6d6f5d
+      internalID: -1702655822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_13
+      name: archer-abilities_33
       rect:
         serializedVersion: 2
         x: 80
@@ -416,14 +836,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 517a2e626219bbc4890c1a84b2f21575
-      internalID: 93984412
+      spriteID: 2dc45ed7ae63acd42a2e523a7dbfabcd
+      internalID: 1726259629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_14
+      name: archer-abilities_34
       rect:
         serializedVersion: 2
         x: 96
@@ -437,14 +857,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51aab0a97d84d2748a0491d48a8bb017
-      internalID: 2099783750
+      spriteID: 0001c0c5c334d0f408a5442f58e0509b
+      internalID: -1984265831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_15
+      name: archer-abilities_35
       rect:
         serializedVersion: 2
         x: 112
@@ -458,14 +878,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b73a19e4921226479a0f62c51edc2a1
-      internalID: -1641343125
+      spriteID: cf17e677f4e0c124dbc8497dcc7434f6
+      internalID: 193495326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_16
+      name: archer-abilities_36
       rect:
         serializedVersion: 2
         x: 128
@@ -479,14 +899,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1fa7ece8c2f275479009efc35554f8d
-      internalID: 1758962996
+      spriteID: 1a7baaa92a6ad92499cd69cbda07ec03
+      internalID: -1397077057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_17
+      name: archer-abilities_37
       rect:
         serializedVersion: 2
         x: 144
@@ -500,14 +920,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0acd2a8ab6139964e9fe2002bf0b147a
-      internalID: -281962778
+      spriteID: 21a8128cb926d6c41840041bbe6aaead
+      internalID: -1240778905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_18
+      name: archer-abilities_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a221239f08752f4ba8cf358d8799346
+      internalID: -1422340183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bf1335dd61bcb4d8107dbe897b5a25
+      internalID: 214993201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781efe9e41652754fb0f82a13c56c1ee
+      internalID: 58327759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f805b63b2817bd546aefa8748057941a
+      internalID: -1726017817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_42
       rect:
         serializedVersion: 2
         x: 0
@@ -521,14 +1025,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db2f9eeddecde44e93b6205ebd0cb54
-      internalID: 1971190052
+      spriteID: a5400aa9e4e0942449eb0198aa791fc1
+      internalID: -1150873870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_19
+      name: archer-abilities_43
       rect:
         serializedVersion: 2
         x: 16
@@ -542,14 +1046,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d5043cd8208dc4297b4a1203915dfc
-      internalID: 802145746
+      spriteID: d4187992345c75d41a50c86ffbcb8f79
+      internalID: 800745112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_20
+      name: archer-abilities_44
       rect:
         serializedVersion: 2
         x: 32
@@ -563,14 +1067,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d3a4d039a736b47950cadad20b34db
-      internalID: 276359394
+      spriteID: 8008d436d03622143b384ab4bdbbb55f
+      internalID: 1923095601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_21
+      name: archer-abilities_45
       rect:
         serializedVersion: 2
         x: 48
@@ -584,14 +1088,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9dad87935a55943bcf5941f92f0654
-      internalID: 412402254
+      spriteID: f49eb8000c8ef9645a73346710090dab
+      internalID: -172087461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_22
+      name: archer-abilities_46
       rect:
         serializedVersion: 2
         x: 64
@@ -605,14 +1109,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7126fa6af9d460143941b7e8e6ed6d87
-      internalID: 408741669
+      spriteID: 44e33c7e718e3594e8f596a11621a358
+      internalID: -432009580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_23
+      name: archer-abilities_47
       rect:
         serializedVersion: 2
         x: 80
@@ -626,14 +1130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8072a3063d28cf54b9b1be7ad5fb269d
-      internalID: -941260983
+      spriteID: dc61064a0d37d7749bebd5a73221c2ca
+      internalID: 642943247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_24
+      name: archer-abilities_48
       rect:
         serializedVersion: 2
         x: 96
@@ -647,14 +1151,161 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2f77cc7a012a9245964ac795f85e470
-      internalID: -64004208
+      spriteID: e98714b394e160445a368361a9f2f797
+      internalID: -240219276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-abilities_25
+      name: archer-abilities_49
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0515f026899a2d34c8d534984c32002d
+      internalID: 1522929104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc215406c28c8a74299c977f78a9e59c
+      internalID: -1089762064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff669f00a082414c9e18c02d995c07e
+      internalID: 548497842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b740b033dbae5a444b1bababce9c3ef2
+      internalID: 1960429114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_53
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3814d94172d02864595b4f4147703ddf
+      internalID: 627653733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf2869b0ab9c3e4eb8168ac9dac4c99
+      internalID: -1786346348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6825781656787cd478c4260fcc8e6e30
+      internalID: 1038918468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_56
       rect:
         serializedVersion: 2
         x: 0
@@ -668,8 +1319,281 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 309f5959eb0648744815b15c253e69f1
-      internalID: 1383859615
+      spriteID: abc74b4a94709fa4faef6f78b7793c7e
+      internalID: 1332736491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71028778507c1d14c9954bbfbb515fe0
+      internalID: -608059527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d47a3e6f0b5044cad641f0b14be2de
+      internalID: -1242267028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970724303c427494b81d5fcb96b5afe5
+      internalID: -109153144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40cccd51764564abfc09277e958427
+      internalID: 770876431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058273177bd638a4daa7fd9960824b6d
+      internalID: -85367208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a1f3854008f1b4e950b94fa836c3a1
+      internalID: -1857189664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a3b1681869d4c48a8151de9cff2626
+      internalID: 365544454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9606c9c05547ac64991177c39d23fb4b
+      internalID: 2034943260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_65
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b21c4f11e7a37f4f9763d0c34654353
+      internalID: 2068027776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_66
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b0e1982a85f9841ac05c3e04ce0f0a
+      internalID: 2141309600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5601a7612950e44c9da5e87f906776b
+      internalID: 105326436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1a49116da3f4a448ff82e3f0be8910
+      internalID: 1377527931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-abilities_69
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784eb1498d0c8084bb47ae9ca3ffc245
+      internalID: 990779094
       vertices: []
       indices: 
       edges: []
@@ -685,32 +1609,76 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      archer-abilities_3: 1700352765
-      archer-abilities_10: 13381219
-      archer-abilities_13: 93984412
-      archer-abilities_23: -941260983
-      archer-abilities_11: 587915647
-      archer-abilities_17: -281962778
-      archer-abilities_4: -375086122
-      archer-abilities_8: 1140810457
-      archer-abilities_9: 1306329212
-      archer-abilities_24: -64004208
-      archer-abilities_20: 276359394
-      archer-abilities_18: 1971190052
-      archer-abilities_19: 802145746
-      archer-abilities_21: 412402254
-      archer-abilities_1: -411995630
-      archer-abilities_15: -1641343125
-      archer-abilities_25: 1383859615
-      archer-abilities_16: 1758962996
-      archer-abilities_5: 918669273
-      archer-abilities_0: -350011393
-      archer-abilities_14: 2099783750
-      archer-abilities_6: 209031920
-      archer-abilities_12: 1645647939
-      archer-abilities_22: 408741669
-      archer-abilities_2: -1904740998
-      archer-abilities_7: 1557155993
+      archer-abilities_40: 58327759
+      archer-abilities_3: -1732505403
+      archer-abilities_39: 214993201
+      archer-abilities_68: 1377527931
+      archer-abilities_28: -1107641958
+      archer-abilities_33: 1726259629
+      archer-abilities_49: 1522929104
+      archer-abilities_35: 193495326
+      archer-abilities_58: -1242267028
+      archer-abilities_67: 105326436
+      archer-abilities_9: -1362579650
+      archer-abilities_20: -1367994295
+      archer-abilities_57: -608059527
+      archer-abilities_18: 1246656423
+      archer-abilities_54: -1786346348
+      archer-abilities_19: -1279291443
+      archer-abilities_1: 1283007068
+      archer-abilities_15: 1209764474
+      archer-abilities_16: -1365111048
+      archer-abilities_44: 1923095601
+      archer-abilities_22: 917054179
+      archer-abilities_14: 731548073
+      archer-abilities_43: 800745112
+      archer-abilities_66: 2141309600
+      archer-abilities_36: -1397077057
+      archer-abilities_7: -1799878466
+      archer-abilities_26: 1969106635
+      archer-abilities_50: -1089762064
+      archer-abilities_56: 1332736491
+      archer-abilities_63: 365544454
+      archer-abilities_37: -1240778905
+      archer-abilities_29: 204210135
+      archer-abilities_59: -109153144
+      archer-abilities_30: 1312187826
+      archer-abilities_10: -1065189723
+      archer-abilities_13: -1603075366
+      archer-abilities_31: -583173714
+      archer-abilities_23: 1631142872
+      archer-abilities_51: 548497842
+      archer-abilities_60: 770876431
+      archer-abilities_52: 1960429114
+      archer-abilities_53: 627653733
+      archer-abilities_41: -1726017817
+      archer-abilities_48: -240219276
+      archer-abilities_11: 1031496879
+      archer-abilities_17: 519389516
+      archer-abilities_61: -85367208
+      archer-abilities_65: 2068027776
+      archer-abilities_4: 634968490
+      archer-abilities_32: -1702655822
+      archer-abilities_8: -1949039163
+      archer-abilities_24: 286202685
+      archer-abilities_69: 990779094
+      archer-abilities_38: -1422340183
+      archer-abilities_55: 1038918468
+      archer-abilities_62: -1857189664
+      archer-abilities_42: -1150873870
+      archer-abilities_21: 1505063880
+      archer-abilities_45: -172087461
+      archer-abilities_25: 1412751146
+      archer-abilities_34: -1984265831
+      archer-abilities_5: -744915798
+      archer-abilities_0: 2071234276
+      archer-abilities_46: -432009580
+      archer-abilities_6: -1120073836
+      archer-abilities_12: -1358173653
+      archer-abilities_47: 642943247
+      archer-abilities_27: 469165641
+      archer-abilities_2: 360735986
+      archer-abilities_64: 2034943260
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
