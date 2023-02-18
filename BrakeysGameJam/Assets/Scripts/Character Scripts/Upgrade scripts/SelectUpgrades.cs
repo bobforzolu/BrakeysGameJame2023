@@ -30,6 +30,7 @@ public class SelectUpgrades : MonoBehaviour
         statsUpgrade.Upgrade(PlayerUpgradeManager.instance.GetHeroStats());
         ///close the window
         PlayerUpgradeManager.instance.ClearSelectUpgradeList();
+        GameController.instance.unpause();
         CloseUi();
     }
     public void SetUpgrade( StatsUpgrade statsUpgrade)

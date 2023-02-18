@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherController : HeroControler
+public class ArcherController : HeroControler,IDamagable
 {
     private ArcherAutoAttacks rangedAuto;
     public GameObject autoattackGameObject;
@@ -37,7 +37,7 @@ public class ArcherController : HeroControler
     {
         arrowRain.AimAbility();
     }
-
+    
     protected override void Update()
     {
         base.Update();
@@ -47,7 +47,9 @@ public class ArcherController : HeroControler
     {
         Movement(heroStats.GetMovementSpeed());
     }
-  
 
-    
+    public void Recover(int Amount)
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -49,10 +49,7 @@ public class EnemySpawner : MonoBehaviour
                 currentWave++;
 
             }
-            else
-            {
-
-            }
+           
             
         }
     }

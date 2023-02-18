@@ -19,7 +19,7 @@ public  class CharacterManager : MonoBehaviour
     [SerializeField]private List<GameObject> characterLineUP = new List<GameObject>();
     private List<GameObject> UsedCharachters= new List<GameObject>();
     public GameObject SelectedCharacter;
-    private HeroControler heroControler;
+    public HeroControler heroControler { get; private set; }
     public SkillIcone skillUi;
     #endregion
     private int characterIndex;
@@ -49,6 +49,8 @@ public  class CharacterManager : MonoBehaviour
     }
     public void SummonCharacter()
     {
+        if(characterLineUP.Count <= 0)
+        {
         // get the max character in the list
         int maxRange = characterLineUP.Count ;
         // get a random number
@@ -65,7 +67,13 @@ public  class CharacterManager : MonoBehaviour
          skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
         statsGraphic.SetHeroStats(heroStats);
         heroControler.OnPlayerDeath += HeroControler_OnPlayerDeath;
-        
+
+
+        }
+        else
+        {
+            ///gameover
+        }
         
 
 
@@ -74,7 +82,6 @@ public  class CharacterManager : MonoBehaviour
     private void HeroControler_OnPlayerDeath(object sender, EventArgs e)
     {
         SummonCharacter();
-        heroControler.OnPlayerDeath -= HeroControler_OnPlayerDeath;
     }
 
     public void SetUpExpt()

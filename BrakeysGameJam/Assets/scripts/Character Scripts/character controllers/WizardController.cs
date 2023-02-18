@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WizardController : HeroControler
+public class WizardController : HeroControler,IDamagable
 {
     [SerializeField] private GameObject autoattackpoint;
     private wizardAutoAttack autoAttacks;
@@ -28,6 +28,8 @@ public class WizardController : HeroControler
 
 
     }
+
+   
 
     private void Skill2_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
@@ -64,5 +66,8 @@ public class WizardController : HeroControler
         base.AbilityTwo();
     }
 
-  
+    public void Recover(int Amount)
+    {
+        throw new System.NotImplementedException();
+    }
 }

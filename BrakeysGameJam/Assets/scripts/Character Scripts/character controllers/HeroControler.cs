@@ -15,7 +15,7 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     public AbilityIconeData skilliconData;
     private HeroHealthVisual healthVisual;
     public LevelSystemController levelSystem { get; private set; }
-    private bool isdead;
+    protected bool isdead;
 
     protected virtual void Awake()
     {
@@ -42,12 +42,14 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     }
     protected virtual void Update()
     {
+        if(isdead) return;
         heroStats.RecoverEnergy();
         heroStats.RecoverHealth();
     }
 
     public  void LoadData()
     {
+            OnPlayerDeath += HeroControler_OnPlayerDeath;
         input = GetComponent<GameInput>();
         RB2D = GetComponent<Rigidbody2D>();
     }
@@ -85,23 +87,29 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     {
         OnPlayerDeath -= HeroControler_OnPlayerDeath;
     }
-    void IDamagable.TakeDamage(int damage)
-    {
-        heroStats.TakeDamage(damage);
-        if(heroStats.GetHealth() <= 0 && !isdead)
-        {
-            OnPlayerDeath += HeroControler_OnPlayerDeath;
-
-        }
-
-    }
+    
 
     private void HeroControler_OnPlayerDeath(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        Destroy(gameObject);
+        
     }
 
-    void IDamagable.Recover(int Amount)
+    public void TakeDamage(int damage)
     {
+        Debug.Log("hit by of : " +damage);
+        heroStats.TakeDamage(damage);
+        if (heroStats.GetHealth() <= 0 && !isdead )
+        {
+            isdead = true;
+
+            OnPlayerDeath?.Invoke(this, null);
+
+        }
+    }
+
+    public void Recover(int Amount)
+    {
+        throw new NotImplementedException();
     }
 }

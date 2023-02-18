@@ -21,6 +21,7 @@ public class KnightController :HeroControler
         
 
     }
+    
     // Update is called once per frame
     protected override void Update()
     {
@@ -40,6 +41,8 @@ public class KnightController :HeroControler
         base.AbilityTwo();
     }
 
-  
-  
+   public void Recover(int Amount)
+    {
+        throw new System.NotImplementedException();
+    }
 }

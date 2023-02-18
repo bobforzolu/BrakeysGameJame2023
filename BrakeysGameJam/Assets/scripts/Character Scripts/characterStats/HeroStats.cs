@@ -108,7 +108,7 @@ public class HeroStats
     public void RecoverHealth()
     {
         if(health < maxHealth) { 
-        health += (int)(Time.deltaTime * 1.1f) + (health / 100);
+        health += (int)(Time.deltaTime * 1) ;
         }
     }
     public void RecoverEnergy()

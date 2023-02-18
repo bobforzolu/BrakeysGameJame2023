@@ -43,7 +43,7 @@ public class LevelSystem
     }
     public void ExperinceModifier()
     {
-        experienceToNextLevel +=  ( experienceToNextLevel * .5f);
+        experienceToNextLevel +=  ( experienceToNextLevel * .4f);
     }
     public int GetLevelNumber()
     {
