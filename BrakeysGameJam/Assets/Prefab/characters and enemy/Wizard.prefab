@@ -344,6 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: c1895f2761d08be4a93b10de8a5482f7, type: 2}
+  skilliconData: {fileID: 11400000, guid: 23a0674651a920545bf6c9f20c51cf32, type: 2}
   autoattackpoint: {fileID: 2323556742877509773}
 --- !u!61 &1120269133943344075
 BoxCollider2D:
@@ -488,6 +489,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4212591836779941224, guid: 50f8dc2655046824ea14359bb087e933, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5379116354447727948, guid: 50f8dc2655046824ea14359bb087e933, type: 3}
       propertyPath: m_Name
       value: windshield
@@ -495,6 +500,10 @@ PrefabInstance:
     - target: {fileID: 5379116354447727948, guid: 50f8dc2655046824ea14359bb087e933, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379116354447727948, guid: 50f8dc2655046824ea14359bb087e933, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50f8dc2655046824ea14359bb087e933, type: 3}

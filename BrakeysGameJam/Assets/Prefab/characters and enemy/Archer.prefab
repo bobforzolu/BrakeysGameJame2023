@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: da2c010992b63e742a2721ce5c5d7bf2, type: 2}
+  skilliconData: {fileID: 11400000, guid: cdd0a030ac2092849bf604831d82383a, type: 2}
   autoattackGameObject: {fileID: 8249693644980469436}
 --- !u!61 &5667618705119112294
 BoxCollider2D:

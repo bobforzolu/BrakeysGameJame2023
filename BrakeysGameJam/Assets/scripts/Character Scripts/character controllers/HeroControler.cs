@@ -9,6 +9,7 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     protected GameInput input;
     private Rigidbody2D RB2D;
     public  CharacterData characterData;
+    public AbilityIconeData skilliconData;
     public LevelSystemController levelSystem { get; private set; }
     private bool isdead;
 

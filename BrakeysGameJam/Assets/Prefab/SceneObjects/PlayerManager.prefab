@@ -1,5 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1129902564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1129902565}
+  - component: {fileID: 1129902566}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1129902565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129902564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6234922377928330803}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129902566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129902564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d51a40533f49e49b36e3ad2f1fb90c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Arrow
+    Prefab: {fileID: 6772085334336304961, guid: 4e211564543981a4ba573e3881bfbdc4, type: 3}
+    size: 30
+  - tag: Arrow rain
+    Prefab: {fileID: 3770928674169786130, guid: 8728045a6a3ba0e449279d8d3332485a, type: 3}
+    size: 30
+  - tag: Explodiing arrows
+    Prefab: {fileID: 3329023915212482036, guid: 0346634f5edc9184fbd7cbd61b285c03, type: 3}
+    size: 30
+  - tag: Enemies
+    Prefab: {fileID: 118240339289979060, guid: 388377aa3b014ca44832d7e02d20e3d2, type: 3}
+    size: 400
+  - tag: WizardBlast
+    Prefab: {fileID: 8611171131064011432, guid: 5f846745df928c749a3b8ad272353318, type: 3}
+    size: 30
+  - tag: WizardMeteor
+    Prefab: {fileID: 1682947667743170219, guid: aedf95d8e03df884081a6f832f76caf5, type: 3}
+    size: 30
+  - tag: Exp
+    Prefab: {fileID: 3938263319768650872, guid: b8f74a4924624cf4eafe1d2c5beeb22b, type: 3}
+    size: 200
+  - tag: popup
+    Prefab: {fileID: 6246246386703213661, guid: e4537d27ad03b0d4aa9f9647e487d9a8, type: 3}
+    size: 150
 --- !u!1 &2801389915108444094
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,10 +120,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 60e3e51df5ab07a43ad64b115bd51e57, type: 2}
   - {fileID: 11400000, guid: 43691fd4356371142a28ba7d62e2e912, type: 2}
   - {fileID: 11400000, guid: f1bba3dad409a494d935578cbb46caa7, type: 2}
-  UpgradeCanvas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  UpgradeButtons: []
 --- !u!1 &2801389916513884015
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +171,7 @@ MonoBehaviour:
   - {fileID: 2906504392989066167, guid: 740884fb4e28570429799dd7189143e4, type: 3}
   - {fileID: 7425339524725396809, guid: 324aa1b4b041d58438f153815095a906, type: 3}
   characterLineUP: []
+  SelectedCharacter: {fileID: 0}
 --- !u!1 &6234922377928330804
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6234922377928330803}
+  - component: {fileID: 1651052970}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -135,6 +203,19 @@ Transform:
   m_Children:
   - {fileID: 2801389916513884008}
   - {fileID: 2801389915108444095}
+  - {fileID: 1129902565}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651052970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234922377928330804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e8a122acb91c94f85ab08ddadb5785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

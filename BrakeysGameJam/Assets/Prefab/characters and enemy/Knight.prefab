@@ -229,12 +229,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1224587194, guid: 753c89b8663d6574db098a37f1420c78, type: 3}
+  m_Sprite: {fileID: 321671338, guid: 77abb81d038fba041bb03ca8f3947895, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -250,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 2906504392595112177}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5fb2aaf227b2ab4284f474432b57abd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -373,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: c915531620827fd4392d32e314854f71, type: 2}
+  skilliconData: {fileID: 11400000, guid: d9eeab64f700d044ea9d077bc3760acb, type: 2}
   AttackPoint: {fileID: 2906504394472726978}
 --- !u!114 &2906504392989066165
 MonoBehaviour:
