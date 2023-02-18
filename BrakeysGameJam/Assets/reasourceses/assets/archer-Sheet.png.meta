@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd0a7c14102ed2840967149bdd768395
-      internalID: 977888303
+      spriteID: 4e8714051d5e6c8408ba330c82825f83
+      internalID: -942425051
       vertices: []
       indices: 
       edges: []
@@ -164,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f1b7f07aae4444b9f87765ee773ac9
-      internalID: -514292256
+      spriteID: f141976316d39614cae64844918cb6d5
+      internalID: 890873143
       vertices: []
       indices: 
       edges: []
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1862f84c2218844c9cb29a1c791b6e2
-      internalID: -185908646
+      spriteID: 252e12290f2eedf4581c7422744e5e54
+      internalID: -124649876
       vertices: []
       indices: 
       edges: []
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 544e6157f5aacd34083b677f671fd07f
-      internalID: 97548536
+      spriteID: e6bcf21203774ae43b8d0ba83043e5ec
+      internalID: 1423658426
       vertices: []
       indices: 
       edges: []
@@ -227,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557ebd9659d9da4438f17a9b3c9ff1b8
-      internalID: -439739448
+      spriteID: 968006317a27ad0488aa7b3279b5dc42
+      internalID: -965788723
       vertices: []
       indices: 
       edges: []
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7583a6a6fda254d4ca9ab864dd8a00d3
-      internalID: 1593978293
+      spriteID: e450555cc0d3c9b4ba5a14c954ddae4e
+      internalID: -541340288
       vertices: []
       indices: 
       edges: []
@@ -269,14 +269,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 287992ead7dfbee4cbcfce63289d9911
-      internalID: -1519446567
+      spriteID: 7c8b88c732c9ca046a688fc952cc12f5
+      internalID: 2024780995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: archer-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8301c4db4ea16b74d99b077a8874aaad
+      internalID: 424490837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74a3a673d622af43a0fbf729d0bd6d7
+      internalID: -715617229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55791cd129c6d064488e045b54e290bc
+      internalID: -1269792574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-Sheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -290,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39295b8c642a5a043885e7ac4d1e1849
-      internalID: 1940321074
+      spriteID: 2bcbeda733515c2488b18bfcd24046b1
+      internalID: -1451926108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_8
+      name: archer-Sheet_11
       rect:
         serializedVersion: 2
         x: 16
@@ -311,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4793cc46257aa843bee7fbee1e02f50
-      internalID: 1529613872
+      spriteID: 86b517e58a3a0d245804f9deedd92783
+      internalID: -2128543489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_9
+      name: archer-Sheet_12
       rect:
         serializedVersion: 2
         x: 32
@@ -332,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0deda69e744dcbf4ca3afd7a62413f25
-      internalID: -1429286211
+      spriteID: 0dfc9eb1bad32e040b7e14ab4653949e
+      internalID: -352194457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: archer-Sheet_10
+      name: archer-Sheet_13
       rect:
         serializedVersion: 2
         x: 48
@@ -353,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b141c03f17d78b4a93ff657baebce03
-      internalID: -1211353949
+      spriteID: 568b14102ef20124f9313464caaab4de
+      internalID: 1869210036
       vertices: []
       indices: 
       edges: []
@@ -370,17 +433,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      archer-Sheet_0: 977888303
-      archer-Sheet_1: -514292256
-      archer-Sheet_5: 1593978293
-      archer-Sheet_6: -1519446567
-      archer-Sheet_7: 1940321074
-      archer-Sheet_3: 97548536
-      archer-Sheet_10: -1211353949
-      archer-Sheet_9: -1429286211
-      archer-Sheet_4: -439739448
-      archer-Sheet_2: -185908646
-      archer-Sheet_8: 1529613872
+      archer-Sheet_0: -942425051
+      archer-Sheet_13: 1869210036
+      archer-Sheet_12: -352194457
+      archer-Sheet_1: 890873143
+      archer-Sheet_5: -541340288
+      archer-Sheet_6: 2024780995
+      archer-Sheet_7: 424490837
+      archer-Sheet_3: 1423658426
+      archer-Sheet_10: -1451926108
+      archer-Sheet_9: -1269792574
+      archer-Sheet_11: -2128543489
+      archer-Sheet_4: -965788723
+      archer-Sheet_2: -124649876
+      archer-Sheet_8: -715617229
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
