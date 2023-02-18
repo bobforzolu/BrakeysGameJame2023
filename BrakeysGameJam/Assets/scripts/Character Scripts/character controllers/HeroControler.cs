@@ -2,13 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class HeroControler :MonoBehaviour
+public abstract class HeroControler :MonoBehaviour,IDamagable
 {
-    private GameInput input;
+    public HeroStats heroStats { get; private set; }
+
+    protected GameInput input;
     private Rigidbody2D RB2D;
     public  CharacterData characterData;
+    public LevelSystemController levelSystem { get; private set; }
+    private bool isdead;
 
-    public virtual void LoadData()
+    protected virtual void Awake()
+    {
+        heroStats = new HeroStats(characterData);
+
+    }
+    protected virtual void Start()
+    {
+        LoadData();
+        levelSystem= GetComponent<LevelSystemController>();
+        levelSystem.levelSystem.OnLevelChanged += LevelSystem_OnLevelChanged;
+    }
+    private void OnDisable()
+    {
+        levelSystem.levelSystem.OnLevelChanged -= LevelSystem_OnLevelChanged;
+
+    }
+
+    private void LevelSystem_OnLevelChanged(object sender, System.EventArgs e)
+    {
+        heroStats.levelStatincrease();
+    }
+
+    public  void LoadData()
     {
         input = GetComponent<GameInput>();
         RB2D = GetComponent<Rigidbody2D>();
@@ -44,4 +70,18 @@ public abstract class HeroControler :MonoBehaviour
 
     }
 
+    void IDamagable.TakeDamage(int damage)
+    {
+        heroStats.TakeDamage(damage);
+        if(heroStats.GetHealth() <= 0 && !isdead)
+        {
+            
+
+        }
+
+    }
+
+    void IDamagable.Recover(int Amount)
+    {
+    }
 }

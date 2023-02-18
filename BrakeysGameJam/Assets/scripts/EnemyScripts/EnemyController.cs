@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     public  GameObject player;
     public  Transform playerPosition;
     private DropExperince dropExperince;
+    private bool isDead;
 
     void Start()
     {
@@ -25,7 +26,6 @@ public class EnemyController : MonoBehaviour, IDamagable
 
 
         // set starting position
-        currentPosition = gameObject.transform;
     }
 
     // Update is called once per frame
@@ -37,6 +37,8 @@ public class EnemyController : MonoBehaviour, IDamagable
     public void FindPlayer()
     {
         // find the players postion
+        currentPosition = gameObject.transform;
+
         playerPosition = player.transform;
         transform.position = Vector2.MoveTowards(currentPosition.position, playerPosition.position, enemyData.speed * Time.deltaTime);
 
@@ -68,19 +70,20 @@ public class EnemyController : MonoBehaviour, IDamagable
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
     {
+        
         ///enemy takes damage if 
         enemy.TakeDamage(damage);
-        if(enemy.currentHealth < 0)
+        if(enemy.currentHealth < 0 && !isDead)
         {
-            dropExperince.DropExp();
-            EnemyDeath();
+            isDead = true;
+            gameObject.SetActive(false);
+            ObjectPulling.instance.SpawnFromPool("Exp",transform.position,Quaternion.identity);
+
         }
     }
-    public void EnemyDeath()
-    {
-        
-        Destroy(gameObject);
-    }
+    
+
+  
 
     #endregion
 }

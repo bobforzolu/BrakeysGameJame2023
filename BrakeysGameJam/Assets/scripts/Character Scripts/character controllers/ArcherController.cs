@@ -4,20 +4,40 @@ using UnityEngine;
 
 public class ArcherController : HeroControler
 {
-    private HeroStats heroStats;
     private ArcherAutoAttacks rangedAuto;
     public GameObject autoattackGameObject;
-    private void Awake()
+    private SkillAracherArrowRain arrowRain;
+    private SkillArrowBomb arrowBomb;
+    
+    protected override void Awake()
     {
-        heroStats = new HeroStats(characterData);
+        base.Awake();
         rangedAuto = GetComponentInChildren<ArcherAutoAttacks>();
+        arrowRain = GetComponentInChildren<SkillAracherArrowRain>();
+        arrowBomb= GetComponentInChildren<SkillArrowBomb>();
+
+        arrowBomb.SetHerodata(heroStats);
+        arrowRain.SetHeroData(heroStats);
         rangedAuto.SetStatData(heroStats);
-        LoadData();
+        rangedAuto.SetBombability(arrowBomb);
     }
-    private void Start()
+    protected override void Start()
     {
-        
+        base.Start();
+        input.playerInputActions.player.Skill1.started += Skill1_started;
+        input.playerInputActions.player.Skill1.canceled += Skill1_canceled;
     }
+
+    private void Skill1_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        arrowRain.ActivateAbility();
+    }
+
+    private void Skill1_started(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        arrowRain.AimAbility();
+    }
+
     private void Update()
     {
         AttackDirection(autoattackGameObject);
@@ -26,18 +46,7 @@ public class ArcherController : HeroControler
     {
         Movement(heroStats.GetMovementSpeed());
     }
-    public override void AbilityOne()
-    {
-        base.AbilityOne();
-    }
+  
 
-    public override void AbilityTwo()
-    {
-        base.AbilityTwo();
-    }
-
-    public override void LoadData()
-    {
-        base.LoadData();
-    }
+    
 }

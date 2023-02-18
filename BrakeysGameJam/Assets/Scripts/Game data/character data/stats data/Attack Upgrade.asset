@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce114d33850663449534914f4389752, type: 3}
   m_Name: Attack Upgrade
   m_EditorClassIdentifier: 
-  Amount: 5
+  StatsIncreaseAmount: 5
   description: 'Increase attack by '
   stateUpgrade: 0

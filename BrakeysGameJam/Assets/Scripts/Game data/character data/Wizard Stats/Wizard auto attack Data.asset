@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ca975a49f80379439214e6a38e011fd, type: 3}
   m_Name: Wizard auto attack Data
   m_EditorClassIdentifier: 
-  AttackInterval: 6
-  TimeUntileNextAttack: 3
+  DeacresAutoattackCooldown: 3
+  AutoattackCoolDown: 0
   Damage: 5
   ProjectileSpeed: 20
-  ProjectileAmount: 0
+  ProjectileAmount: 1

@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class WizardController : HeroControler
 {
-    private HeroStats heroStats;
     [SerializeField] private GameObject autoattackpoint;
-    private KnightAutoAttack autoAttacks;
-    private void Awake()
+    private wizardAutoAttack autoAttacks;
+    private SkillCycloneShield cycloneShield;
+    protected override void Awake()
     {
-        heroStats = new(characterData);
-        autoAttacks = GetComponentInChildren<KnightAutoAttack>();
-    }
-    private void Start()
-    {
-        LoadData();
+        base.Awake();
+        autoAttacks = GetComponentInChildren<wizardAutoAttack>();
         autoAttacks.SetStatData(heroStats);
+        cycloneShield= GetComponentInChildren<SkillCycloneShield>();
+        cycloneShield.SetHeroData(heroStats);
+    }
+    protected override void Start()
+    {
+        base.Start();
+
+        input.playerInputActions.player.Skill1.performed += Skill1_performed;
 
 
     }
+
+    private void Skill1_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        cycloneShield.ActivateSkill();
+    }
+
     // Update is called once per frame
     private void Update()
     {
@@ -37,9 +47,5 @@ public class WizardController : HeroControler
         base.AbilityTwo();
     }
 
-    public override void LoadData()
-    {
-        base.LoadData();
-
-    }
+  
 }

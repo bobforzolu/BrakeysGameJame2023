@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class KnightController :HeroControler
 {
-    private HeroStats heroStats;
     private KnightAutoAttack autoAttack;
     public GameObject AttackPoint;
 
-    private void Awake()
+    protected override void Awake()
     {
-        heroStats = new(characterData);
+        base.Awake();
     }
-    private void Start()
+    protected override void Start()
     {
-        LoadData();
+        base.Start();
 
         autoAttack = GetComponentInChildren<KnightAutoAttack>();
 
@@ -40,10 +39,6 @@ public class KnightController :HeroControler
         base.AbilityTwo();
     }
 
-    public override void LoadData()
-    {
-        base.LoadData();
-        
-    }
+  
   
 }

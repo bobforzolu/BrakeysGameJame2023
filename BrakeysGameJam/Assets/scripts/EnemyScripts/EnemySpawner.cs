@@ -7,12 +7,17 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]private EnemyWave[] enemyWave;
     private int currentWave;
-    [SerializeField] private GameObject enemyPrefab;
 
     private Camera mainCamera;
     private float camHeight;
     private float camWidth;
-    private float buffer = 1f;
+    public float buffer = 5f;
+
+    private float timer;
+    private float SpawnTimer = 15f;
+    private bool canSpawn;
+
+    public int currentEnemy;
 
     void Start()
     {
@@ -20,22 +25,31 @@ public class EnemySpawner : MonoBehaviour
         camHeight = mainCamera.orthographicSize;
         camWidth = camHeight * mainCamera.aspect;
 
-        SpawnEnemy();
     }
 
     void Update()
     {
-        
+        StartSpawnTimer();
     }
 
     public void SpawnEnemy()
-    {
+    { 
+
         for (int i = 0; i < enemyWave[currentWave].SpawnRatePerSecond; i++)
         {
-            GameObject enemy = enemyPrefab;
-            Instantiate(enemy, new Vector2(SpawnLocation().x,SpawnLocation().y ),Quaternion.identity);
-            enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
+            currentEnemy = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            if(currentEnemy < 100) {
+                GameObject enemy = ObjectPulling.instance.SpawnFromPool("Enemies", SpawnLocation(),Quaternion.identity);
+                enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
+                enemyWave[currentWave].summonedEnemies++;
+            
+            }
+            if (enemyWave[currentWave].summonedEnemies / enemyWave[currentWave].EnemyCount > 0.7f && enemyWave.Length < currentEnemy)
+            { 
+                currentWave++;
 
+            }
+            
         }
     }
     public Vector2 SpawnLocation()
@@ -48,6 +62,26 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
+    public void StartSpawnTimer()
+    {
+        if(canSpawn)      
+        {
+            canSpawn= false;
+            timer = SpawnTimer;
+            SpawnEnemy();
+
+        }
+        else
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                canSpawn= true;
+            }
+        }
+
+    }
+
 }
 
 [System.Serializable]
@@ -55,6 +89,8 @@ public class EnemyWave{
 
     public int SpawnRatePerSecond;
     public int EnemyCount;
+    public int summonedEnemies;
     public EnemyData[] enemies;
+    
 
 }

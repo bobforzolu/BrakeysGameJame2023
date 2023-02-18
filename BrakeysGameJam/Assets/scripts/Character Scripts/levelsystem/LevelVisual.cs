@@ -47,4 +47,9 @@ public class LevelVisual : MonoBehaviour
     {
         SetLevel(levelSystem.GetLevelNumber());
     }
+    private void OnDestroy()
+    {
+        levelSystem.OnLevelChanged-= LevelSystem_OnLevelChanged;
+        levelSystem.OnExperinceEarned -= LevelSystem_OnExperinceEarned;
+    }
 }

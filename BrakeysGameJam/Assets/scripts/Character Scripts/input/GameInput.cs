@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameInput : MonoBehaviour
 {
-    private PlayerInputActions playerInputActions;
+    public PlayerInputActions playerInputActions { get; private set; }
     private Camera cam;
     private void Awake()
     {
@@ -23,6 +23,13 @@ public class GameInput : MonoBehaviour
         inputValue = inputValue.normalized;
 
         return inputValue;
+    }
+    public Vector3 RawMousePosition()
+    {
+        Vector3 rawmouseposition = playerInputActions.player.Aim.ReadValue<Vector2>();
+        Vector3 mouseposition = cam.ScreenToWorldPoint(rawmouseposition);
+
+        return mouseposition;
     }
     public Vector2 GetMousePosition()
     {

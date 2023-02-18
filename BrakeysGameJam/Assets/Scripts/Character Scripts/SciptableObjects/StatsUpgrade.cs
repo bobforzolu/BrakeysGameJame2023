@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="Stats Upgrade", menuName = "Character/ CharacterStat Upgrade")]
 public class StatsUpgrade : ScriptableObject
 {
-    public int Amount;
+    public int StatsIncreaseAmount;
     public string description;
     public StateUpgrade stateUpgrade;
     
@@ -14,27 +14,27 @@ public class StatsUpgrade : ScriptableObject
     {
         if(stateUpgrade == StateUpgrade.attack) 
         {
-            heroStats.IncreaseAttack(Amount);
+            heroStats.IncreaseAttack(StatsIncreaseAmount);
         }
         else if(stateUpgrade == StateUpgrade.health)
         {
-            heroStats.IncreaseHealthk(Amount);
+            heroStats.IncreaseHealthk(StatsIncreaseAmount);
         }
         else if(stateUpgrade == StateUpgrade.attackSpeed)
         {
-            heroStats.IncreaseAttackSpeed(Amount);
+            heroStats.IncreaseAttackSpeed(StatsIncreaseAmount);
         }
         else if(stateUpgrade == StateUpgrade.movement)
         {
-            heroStats.IncreaseMovement(Amount);
+            heroStats.IncreaseMovement(StatsIncreaseAmount);
         }
         else if(stateUpgrade == StateUpgrade.abilityEnergy) 
         { 
-            heroStats.IncreaseAbilityEnergy(Amount);
+            heroStats.IncreaseAbilityEnergy(StatsIncreaseAmount);
         }
         else if(stateUpgrade == StateUpgrade.all)
         {
-            heroStats.IncreasAllStats(Amount);
+            heroStats.IncreasAllStats(StatsIncreaseAmount);
         }
     }
 public enum StateUpgrade

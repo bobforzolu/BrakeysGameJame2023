@@ -30,7 +30,7 @@ public class KnightAutoAttack : MonoBehaviour
     {
         if (canattack)
         {
-            hitDetectBox.DoDamage(heroStats.GetAttackDamage());
+            hitDetectBox.SetableDoDamage(heroStats.GetAttackDamage());
             timer = TimeUntilAttack();
             canattack = false;
         }
@@ -46,7 +46,7 @@ public class KnightAutoAttack : MonoBehaviour
     }
     private float TimeUntilAttack()
     {
-        timer = timer = (attackData.AttackInterval - heroStats.GetAttackSpeed());
+        timer = timer = (attackData.DeacresAutoattackCooldown - heroStats.GetAttackSpeed());
 
         return timer;
     }

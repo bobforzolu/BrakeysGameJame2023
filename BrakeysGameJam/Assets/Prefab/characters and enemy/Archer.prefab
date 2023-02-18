@@ -270,6 +270,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572823163872683455}
+  - component: {fileID: 412529915}
+  - component: {fileID: 412529917}
   m_Layer: 0
   m_Name: abilities
   m_TagString: Untagged
@@ -292,6 +294,35 @@ Transform:
   m_Father: {fileID: 7563962172928828047}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412529915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912902584341033922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0945a7f0dca6b488425eec1ff8aff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positiono: {x: 0, y: 0}
+  AbilityPrefab: {fileID: 3770928674169786130, guid: 8728045a6a3ba0e449279d8d3332485a, type: 3}
+  arrowrainData: {fileID: 11400000, guid: ba7697c1ccaefa249b82ab47a7ae417f, type: 2}
+--- !u!114 &412529917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912902584341033922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457448b24490c1941822b1a760ad6197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowBobPrefab: {fileID: 3329023915212482036, guid: 0346634f5edc9184fbd7cbd61b285c03, type: 3}
+  baseAttack: 10
 --- !u!1 &8249693644980469436
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7893f0740575348a092ef8cf60c703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombskill: {fileID: 412529917}
   attackData: {fileID: 11400000, guid: 968c91d4780c53d489b3b7274f029ed9, type: 2}
   Projectile: {fileID: 6772085334336304961, guid: 4e211564543981a4ba573e3881bfbdc4, type: 3}
   attackPoint: {fileID: 7770432207832376037}

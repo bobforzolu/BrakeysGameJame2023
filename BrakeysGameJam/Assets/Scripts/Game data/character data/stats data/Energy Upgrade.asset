@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce114d33850663449534914f4389752, type: 3}
   m_Name: Energy Upgrade
   m_EditorClassIdentifier: 
-  Amount: 3
-  description: Increase your energy 3
+  StatsIncreaseAmount: 5
+  description: Increase your energy by
   stateUpgrade: 4
