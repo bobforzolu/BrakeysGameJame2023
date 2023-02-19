@@ -63,7 +63,6 @@ public class EnemyController : MonoBehaviour, IDamagable
 
         }
 
-        animator.runtimeAnimatorController = enemyData.animationClip;
 
     }
     #region damage and health recovery

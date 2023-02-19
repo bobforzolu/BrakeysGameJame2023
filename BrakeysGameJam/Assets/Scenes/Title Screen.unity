@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title Screen Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8571482998371469300, guid: 76ca714ec369a9b489d54a38c3665c28, type: 3}
+      propertyPath: m_text
+      value: Survive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ca714ec369a9b489d54a38c3665c28, type: 3}
 --- !u!1 &1575553315
