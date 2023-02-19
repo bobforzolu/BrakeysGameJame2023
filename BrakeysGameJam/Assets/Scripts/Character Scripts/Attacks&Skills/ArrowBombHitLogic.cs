@@ -11,10 +11,13 @@ public class ArrowBombHitLogic : MonoBehaviour
     private bool hit;
     private bool explosionhit;
     private Rigidbody2D rb2d;
+    AudioSource audioSource;
+
     private void Start()
     {
         animator= GetComponent<Animator>();
         rb2d = GetComponentInParent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +26,7 @@ public class ArrowBombHitLogic : MonoBehaviour
             enemies = collision.GetComponent<IDamagable>();
             if (enemies != null)
             {
+                audioSource.Play();
                 hit= true;
                 animator.SetBool("hit", true);
 
