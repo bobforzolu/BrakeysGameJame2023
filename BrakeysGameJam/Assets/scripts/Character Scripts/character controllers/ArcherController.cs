@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherController : HeroControler
+public class ArcherController : HeroControler,IDamagable
 {
     private ArcherAutoAttacks rangedAuto;
     public GameObject autoattackGameObject;
@@ -21,6 +21,11 @@ public class ArcherController : HeroControler
         rangedAuto.SetStatData(heroStats);
         rangedAuto.SetBombability(arrowBomb);
     }
+    private void OnDisable()
+    {
+        input.playerInputActions.player.Skill1.started -= Skill1_started;
+        input.playerInputActions.player.Skill1.canceled -= Skill1_canceled;
+    }
     protected override void Start()
     {
         base.Start();
@@ -37,16 +42,19 @@ public class ArcherController : HeroControler
     {
         arrowRain.AimAbility();
     }
-
-    private void Update()
+    
+    protected override void Update()
     {
+        base.Update();
         AttackDirection(autoattackGameObject);
     }
     private void FixedUpdate()
     {
         Movement(heroStats.GetMovementSpeed());
     }
-  
 
-    
+    public void Recover(int Amount)
+    {
+        throw new System.NotImplementedException();
+    }
 }

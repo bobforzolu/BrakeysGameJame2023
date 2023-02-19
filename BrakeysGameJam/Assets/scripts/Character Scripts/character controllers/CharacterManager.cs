@@ -7,6 +7,7 @@ using Cinemachine;
 public  class CharacterManager : MonoBehaviour
 {
     public static CharacterManager instance { get; private set; }
+    #region character Variables
     public event EventHandler<OncharterlevelArgs> OnCharacterSpawn;
     public class OncharterlevelArgs: EventArgs
     {
@@ -14,14 +15,18 @@ public  class CharacterManager : MonoBehaviour
     }
 
     public CinemachineVirtualCamera cam;
-
     [SerializeField] private GameObject[] character;
     [SerializeField]private List<GameObject> characterLineUP = new List<GameObject>();
     private List<GameObject> UsedCharachters= new List<GameObject>();
     public GameObject SelectedCharacter;
+    public HeroControler heroControler { get; private set; }
     public SkillIcone skillUi;
+    #endregion
     private int characterIndex;
     private int prestige;
+    public HeroStats heroStats { get; private set; }
+    public StatsGraphic statsGraphic;
+    public GameObject PauseMenue;
     private void Awake()
     {
         
@@ -45,6 +50,8 @@ public  class CharacterManager : MonoBehaviour
     }
     public void SummonCharacter()
     {
+        if(characterLineUP.Count >= 0)
+        {
         // get the max character in the list
         int maxRange = characterLineUP.Count ;
         // get a random number
@@ -56,13 +63,35 @@ public  class CharacterManager : MonoBehaviour
         characterLineUP.RemoveAt(characterIndex);
         // add it to the used character list
         UsedCharachters.Add(SelectedCharacter);
-        skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
+        heroControler = SelectedCharacter.GetComponent<HeroControler>();
+        heroStats = heroControler.heroStats;
+         skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
+        statsGraphic.SetHeroStats(heroStats);
+        heroControler.OnPlayerDeath += HeroControler_OnPlayerDeath;
+        PauseMenue.SetActive(false);
+
+        }
+        else
+        {
+            ///gameover
+        }
         
 
 
     }
+
+    private void HeroControler_OnPlayerDeath(object sender, EventArgs e)
+    {
+        SummonCharacter();
+    }
+
     public void SetUpExpt()
     {
+
+    }
+    private void OnDisable()
+    {
+        heroControler.OnPlayerDeath -= HeroControler_OnPlayerDeath;
 
     }
 }

@@ -59,16 +59,60 @@ MonoBehaviour:
     size: 400
   - tag: WizardBlast
     Prefab: {fileID: 8611171131064011432, guid: 5f846745df928c749a3b8ad272353318, type: 3}
-    size: 30
+    size: 40
   - tag: WizardMeteor
     Prefab: {fileID: 1682947667743170219, guid: aedf95d8e03df884081a6f832f76caf5, type: 3}
-    size: 30
+    size: 40
   - tag: Exp
     Prefab: {fileID: 3938263319768650872, guid: b8f74a4924624cf4eafe1d2c5beeb22b, type: 3}
     size: 200
   - tag: popup
     Prefab: {fileID: 6246246386703213661, guid: e4537d27ad03b0d4aa9f9647e487d9a8, type: 3}
-    size: 150
+    size: 300
+--- !u!1 &1195049216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195049217}
+  - component: {fileID: 1195049218}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195049217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195049216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6234922377928330803}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195049218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195049216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dce4ac9ab0bea743b18166e0025da9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2801389915108444094
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +164,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 60e3e51df5ab07a43ad64b115bd51e57, type: 2}
   - {fileID: 11400000, guid: 43691fd4356371142a28ba7d62e2e912, type: 2}
   - {fileID: 11400000, guid: f1bba3dad409a494d935578cbb46caa7, type: 2}
-  UpgradeButtons: []
+  UpgradeButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  upgradeCanvas: {fileID: 0}
 --- !u!1 &2801389916513884015
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +220,8 @@ MonoBehaviour:
   - {fileID: 7425339524725396809, guid: 324aa1b4b041d58438f153815095a906, type: 3}
   characterLineUP: []
   SelectedCharacter: {fileID: 0}
+  skillUi: {fileID: 0}
+  statsGraphic: {fileID: 0}
 --- !u!1 &6234922377928330804
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +254,7 @@ Transform:
   - {fileID: 2801389916513884008}
   - {fileID: 2801389915108444095}
   - {fileID: 1129902565}
+  - {fileID: 1195049217}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

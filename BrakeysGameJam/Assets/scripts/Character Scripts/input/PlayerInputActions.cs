@@ -62,11 +62,20 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""45161465-5c09-4f6b-9f73-45d0e29441a4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": ""arrowkey"",
+                    ""name"": ""wasd"",
                     ""id"": ""7cca09bb-79b1-4079-a2d7-4a6e6fb194ab"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -152,6 +161,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""723c0c6b-965b-4bdd-8282-6f0616296404"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -187,6 +207,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_player_Skill1 = m_player.FindAction("Skill1", throwIfNotFound: true);
         m_player_Skill2 = m_player.FindAction("Skill2", throwIfNotFound: true);
         m_player_Aim = m_player.FindAction("Aim", throwIfNotFound: true);
+        m_player_pause = m_player.FindAction("pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -250,6 +271,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_player_Skill1;
     private readonly InputAction m_player_Skill2;
     private readonly InputAction m_player_Aim;
+    private readonly InputAction m_player_pause;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -258,6 +280,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @Skill1 => m_Wrapper.m_player_Skill1;
         public InputAction @Skill2 => m_Wrapper.m_player_Skill2;
         public InputAction @Aim => m_Wrapper.m_player_Aim;
+        public InputAction @pause => m_Wrapper.m_player_pause;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -279,6 +302,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Aim.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
                 @Aim.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
                 @Aim.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
+                @pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -295,6 +321,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Aim.started += instance.OnAim;
                 @Aim.performed += instance.OnAim;
                 @Aim.canceled += instance.OnAim;
+                @pause.started += instance.OnPause;
+                @pause.performed += instance.OnPause;
+                @pause.canceled += instance.OnPause;
             }
         }
     }
@@ -323,5 +352,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnSkill1(InputAction.CallbackContext context);
         void OnSkill2(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

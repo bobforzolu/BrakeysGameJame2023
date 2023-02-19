@@ -9,6 +9,7 @@ TagManager:
   - Ui
   - UpGradeUi
   - CinemachineCamera
+  - Meteor
   layers:
   - Default
   - TransparentFX

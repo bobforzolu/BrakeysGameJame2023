@@ -7,8 +7,11 @@ public class HeroStats
     private int attack;
     private float attackSpeed;
     private int health;
-    private int abiltyenergy;
-    private int movement;
+    private int maxHealth;
+    private float energy;
+    private float movement;
+    private int maxEnergy;
+    
     public CharacterData characterdata { get; private set; }
 
     public HeroStats(CharacterData characterData)
@@ -16,30 +19,36 @@ public class HeroStats
         characterdata =  characterData;
         attack = characterData.initalAttack;
         attackSpeed = characterData.initalttakSpeed;
+        maxHealth = characterData.initalHealth;
         health = characterData.initalHealth;
-        abiltyenergy = characterData.AbilityEnergy;
+        maxEnergy = characterData.AbilityEnergy;
+        energy = characterData.AbilityEnergy;
         movement = characterData.initalSpeed;
     }
-    public float GetAttackDamage(int OtherAttacksDamage)
-    {
-        float damage = attack * (1 + (OtherAttacksDamage/10));
-        return damage;
-    }
+  
     public int GetAttackDamage()
     {
-        int damage = attack ;
-        return damage;
+        
+        return attack;
     }
-    public int GetAbilityEnergy()
+    public int getMaxHealth()
     {
-        return abiltyenergy;
+        return maxHealth;
+    }
+    public int getMaxEnergy()
+    {
+        return maxEnergy;
+    }
+    public float GetEnergy()
+    {
+        return energy;
     }
    
     public float GetAttackSpeed()
     {
         return attackSpeed;
     }
-    public int GetMovementSpeed()
+    public float GetMovementSpeed()
     {
         return movement;
     }
@@ -51,14 +60,17 @@ public class HeroStats
     {
         attack += statIncrease;
         attackSpeed += (statIncrease * 0.03f);
+        maxHealth += statIncrease;
+        maxEnergy += statIncrease;
         health += statIncrease;
-        movement += statIncrease;
-        abiltyenergy += statIncrease;
+        movement += (statIncrease * 0.5f);
+        energy += statIncrease;
     }
     public void levelStatincrease()
     {
         attack += 1;
-        abiltyenergy += 1;
+        energy += 1;
+        maxEnergy+= 1;
         health += 2;
 
 
@@ -73,24 +85,44 @@ public class HeroStats
     }
     public void IncreaseHealthk(int increase)
     {
-        health += increase;
+        maxHealth += increase;
+        health+= increase;
     }
     public void IncreaseMovement(int increase)
     {
-        movement += increase;
+        movement += (increase *0.5f);
     }
     public void IncreaseAbilityEnergy(int increase)
     {
-        abiltyenergy += increase;
+        energy += increase;
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
     }
-
-    public void ToStringStats()
+    public void Abilityisused(float amount)
     {
-        Debug.Log($"hp: {health} \n attack: {attack} \n Energy: {abiltyenergy}\n attackspeed: {attackSpeed}\n movement: {movement}");
+
+        energy -= amount;
+    }
+    public void RecoverHealth()
+    {
+        if(health < maxHealth) { 
+        health += (int)(Time.deltaTime * 1) ;
+        }
+    }
+    public void RecoverEnergy()
+    {
+        if(energy < maxEnergy)
+        {
+
+        energy += (Time.deltaTime * 1.1f) + (maxEnergy/100);
+        }
+    }
+
+    public string ToStringStats()
+    {
+        return $"hp: {maxHealth} \n attack: {attack} \n Energy: {maxEnergy}\n attackspeed: {attackSpeed}\n movement: {movement}";
     }
    
 }

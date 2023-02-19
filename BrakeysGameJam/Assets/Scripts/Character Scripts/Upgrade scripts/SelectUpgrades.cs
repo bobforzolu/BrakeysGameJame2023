@@ -20,7 +20,6 @@ public class SelectUpgrades : MonoBehaviour
         if(statsUpgrade!= null)
         {
         Description.text = statsUpgrade.description + statsUpgrade.StatsIncreaseAmount.ToString();
-        Debug.Log(heroStats);
 
         }
     }
@@ -30,6 +29,7 @@ public class SelectUpgrades : MonoBehaviour
         statsUpgrade.Upgrade(PlayerUpgradeManager.instance.GetHeroStats());
         ///close the window
         PlayerUpgradeManager.instance.ClearSelectUpgradeList();
+        GameController.instance.unpause();
         CloseUi();
     }
     public void SetUpgrade( StatsUpgrade statsUpgrade)

@@ -10,6 +10,6 @@ public class DurationSkills : ScriptableObject
     public float maxDuration;
     public float maxAttackInterval;
     public int Damage;
-    public int SkillConsummption;
+    public int EnergyConsumption;
 
 }

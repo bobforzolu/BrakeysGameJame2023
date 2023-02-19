@@ -12,10 +12,12 @@ public class SkillAracherArrowRain : MonoBehaviour
     private HeroStats heroStats;
     public DurationSkills arrowrainData;
     private int baseAttack = 5;
+    private int energycost;
 
     private void Start()
     {
         baseAttack = arrowrainData.Damage;
+        energycost = arrowrainData.EnergyConsumption;
         playerControls =  GetComponentInParent<GameInput>();
     }
     public void AimAbility()
@@ -31,14 +33,19 @@ public class SkillAracherArrowRain : MonoBehaviour
     }
     public void ActivateAbility()
     {
-      GameObject arrowrain =  Instantiate(AbilityPrefab, positiono,Quaternion.identity);
-        arrowrain.GetComponentInChildren<HitBoxDetection>().UpdateDamage(AttackDamage());
+        if(heroStats.GetEnergy() > arrowrainData.EnergyConsumption)
+        {
+            heroStats.Abilityisused(energycost);
+            GameObject arrowrain =  ObjectPulling.instance.SpawnFromPool("Arrow rain", positiono,Quaternion.identity);
+            arrowrain.GetComponent<DamageOverTimeTimer>().GetComponent<DamageOverTimeTimer>().SetHeroStats(heroStats);
+            arrowrain.GetComponentInChildren<HitBoxDetection>().UpdateDamage(AttackDamage());
+
+        }
     }
     public void SetHeroData(HeroStats heroStats)
     {
         this.heroStats = heroStats;
 
-        AbilityPrefab.GetComponent<DamageOverTimeTimer>().GetComponent<DamageOverTimeTimer>().SetHeroStats(heroStats);
     }
 
 }

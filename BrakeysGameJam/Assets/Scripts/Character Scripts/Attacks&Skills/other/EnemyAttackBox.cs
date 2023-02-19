@@ -5,12 +5,13 @@ using UnityEngine;
 public class EnemyAttackBox : MonoBehaviour
 {
     public IDamagable player;
-   
+    public EnemyData enemyData;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            player = collision.GetComponent<IDamagable>();
+          player =  collision.GetComponent<IDamagable>();
+            player.TakeDamage(enemyData.Damage);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)

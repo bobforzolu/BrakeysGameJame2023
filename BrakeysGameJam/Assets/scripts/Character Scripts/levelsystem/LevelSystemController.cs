@@ -12,6 +12,7 @@ public class LevelSystemController : MonoBehaviour
     private GameObject ui;
     private GameObject upgradeui;
     private HeroControler heroControler;
+    private HeroHealthVisual visual;
     private void Awake()
     {
         levelSystem = new LevelSystem();
@@ -20,7 +21,9 @@ public class LevelSystemController : MonoBehaviour
         upgradeui = ui.transform.Find("Upgrade ui canvas").gameObject;
         levelVisual = ui.GetComponentInChildren<LevelVisual>();
         upgradeVisuals= ui.GetComponentInChildren<UpgradeVisuals>();
+        visual =GetComponentInChildren<HeroHealthVisual>();
         heroControler = GetComponent<HeroControler>();
+        
     }
     private void OnDisable()
     {
@@ -39,6 +42,7 @@ public class LevelSystemController : MonoBehaviour
         experinceCollector.SetLevelSystem(levelSystem);
         upgradeVisuals.GetLevelSytem(levelSystem);
         levelSystem.OnLevelChanged += LevelSystem_OnLevelChanged;
+        visual.SetlevelSystem(levelSystem);
 
     }
 

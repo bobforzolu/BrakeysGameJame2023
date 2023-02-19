@@ -17,4 +17,4 @@ MonoBehaviour:
   Color: {r: 0.96608496, g: 0, b: 1, a: 1}
   speed: 2
   health: 10
-  Damage: 2
+  Damage: 3

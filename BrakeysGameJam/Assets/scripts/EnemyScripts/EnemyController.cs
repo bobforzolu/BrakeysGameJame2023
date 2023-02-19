@@ -19,8 +19,9 @@ public class EnemyController : MonoBehaviour, IDamagable
     {
         /// find the player in the scene
         enemy = new Enemy(enemyData);
-        player = GameObject.FindGameObjectWithTag("Player");
         dropExperince = GetComponent<DropExperince>();
+        player = GameObject.FindGameObjectWithTag("Player");
+
         playerPosition = player.transform;
 
 
@@ -28,10 +29,17 @@ public class EnemyController : MonoBehaviour, IDamagable
         // set starting position
     }
 
+  
+
     // Update is called once per frame
     void Update()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        if(player != null)
+        {
+
         FindPlayer();
+        }
     }
 
     public void FindPlayer()
@@ -68,7 +76,11 @@ public class EnemyController : MonoBehaviour, IDamagable
     /// takes damage when player attacks
     /// </summary>
     /// <param name="damage"></param>
-    public void TakeDamage(int damage)
+     void TakeDamage(int damage)
+    {
+    }
+
+    void IDamagable.TakeDamage(int damage)
     {
         
         ///enemy takes damage if 
@@ -84,9 +96,14 @@ public class EnemyController : MonoBehaviour, IDamagable
 
         }
     }
-    
 
-  
+    void IDamagable.Recover(int Amount)
+    {
+        throw new System.NotImplementedException();
+    }
+
+
+
 
     #endregion
 }

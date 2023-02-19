@@ -22,6 +22,7 @@ public class UpgradeVisuals : MonoBehaviour
     private void LevelSystem_OnLevelChanged(object sender, System.EventArgs e)
     {
         StartCoroutine( PlayerUpgradeManager.instance.SelectUpgrades());
+        GameController.instance.Pause();
     }
     private void OnDestroy()
     {
@@ -32,4 +33,5 @@ public class UpgradeVisuals : MonoBehaviour
         }
 
     }
+
 }
