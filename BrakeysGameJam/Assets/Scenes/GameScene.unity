@@ -208,9 +208,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e50776cd28856224ba9e5348e3aa24d3, type: 3}
---- !u!1 &473168912 stripped
+--- !u!1 &394752070 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076853814025675799, guid: 56770596e402a3c408f18c306eb55f32, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3639407700468152874, guid: 56770596e402a3c408f18c306eb55f32, type: 3}
   m_PrefabInstance: {fileID: 3639407699592288443}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &522552347 stripped
@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 2801389916513884009, guid: fb0ef829a937e764cbb89ad7e3f3d776, type: 3}
       propertyPath: victory
       value: 
-      objectReference: {fileID: 473168912}
+      objectReference: {fileID: 394752070}
     - target: {fileID: 2801389916513884009, guid: fb0ef829a937e764cbb89ad7e3f3d776, type: 3}
       propertyPath: Gameover
       value: 

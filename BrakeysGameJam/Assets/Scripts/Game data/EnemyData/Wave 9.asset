@@ -16,5 +16,6 @@ MonoBehaviour:
   animationClip: {fileID: 9100000, guid: 0831eec373a19514684f37fe6096e0b2, type: 2}
   Color: {r: 1, g: 1, b: 1, a: 1}
   speed: 5
-  health: 100
+  health: 200
   Damage: 15
+  experience: 150

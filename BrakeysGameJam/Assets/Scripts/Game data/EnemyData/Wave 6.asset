@@ -18,3 +18,4 @@ MonoBehaviour:
   speed: 4
   health: 120
   Damage: 15
+  experience: 150

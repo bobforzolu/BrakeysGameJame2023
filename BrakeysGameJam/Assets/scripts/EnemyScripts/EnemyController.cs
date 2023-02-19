@@ -90,7 +90,9 @@ public class EnemyController : MonoBehaviour, IDamagable
        
          if(enemy.currentHealth < 0 && !isDead)
         {
-            ObjectPulling.instance.SpawnFromPool("Exp", transform.position, Quaternion.identity);
+           GameObject exp = ObjectPulling.instance.SpawnFromPool("Exp", transform.position, Quaternion.identity);
+            exp.GetComponent<ExperincePoint>().experince = enemyData.experience;
+
             isDead = true;
             gameObject.SetActive(false);
 

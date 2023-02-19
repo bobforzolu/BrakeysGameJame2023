@@ -59,11 +59,15 @@ public class HeroStats
     public void IncreasAllStats(int statIncrease)
     {
         attack += statIncrease;
-        attackSpeed += (statIncrease * 0.03f);
+        if(attackSpeed < 1)
+        {
+
+            attackSpeed += (statIncrease * 0.03f);
+        }
         maxHealth += statIncrease;
         maxEnergy += statIncrease;
         health += statIncrease;
-        movement += (statIncrease * 0.5f);
+        movement += (statIncrease * 0.3f);
         energy += statIncrease;
     }
     public void levelStatincrease()
@@ -116,7 +120,7 @@ public class HeroStats
         if(energy < maxEnergy)
         {
 
-        energy += (Time.deltaTime * 1.5f) + (maxEnergy/100);
+        energy += (Time.deltaTime * 1.5f) + (maxEnergy/10);
         }
     }
 

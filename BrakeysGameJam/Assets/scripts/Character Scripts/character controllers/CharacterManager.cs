@@ -75,10 +75,20 @@ public  class CharacterManager : MonoBehaviour
         UsedCharachters.Add(SelectedCharacter);
         heroControler = SelectedCharacter.GetComponent<HeroControler>();
         heroStats = heroControler.heroStats;
-         skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
+            if(prestige > 0 && EnemySpawner.enemySpawner.currentWave >= 2)
+            {
+                heroStats.IncreasAllStats(20);
+            }
+            else if (prestige > 0 && EnemySpawner.enemySpawner.currentWave > 4)
+            {
+                heroStats.IncreasAllStats(50);
+
+            }
+            skillUi.seticone(SelectedCharacter.GetComponent<HeroControler>().skilliconData);
         statsGraphic.SetHeroStats(heroStats);
         heroControler.OnPlayerDeath += HeroControler_OnPlayerDeath;
         PauseMenue.SetActive(false);
+            prestige++;
 
         }
         else

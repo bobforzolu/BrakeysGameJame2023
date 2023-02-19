@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExperincePoint : MonoBehaviour
 {
-    [SerializeField]private int experince;
+    [SerializeField]public int experince;
 
 
     public int AwardExperince()
