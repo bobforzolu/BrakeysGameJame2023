@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
     public int currentEnemy;
     public float spawnRadius = 2f;
     public static EnemySpawner enemySpawner;
-    public bool GameEnd;
+    public bool SpawnEnd;
     private void Awake()
     {
         enemySpawner = this;
@@ -36,7 +36,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (!GameEnd)
+            currentEnemy = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        if (!SpawnEnd)
         {
             StartSpawnTimer();
 
@@ -48,7 +49,6 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 0; i < enemyWave[currentWave].SpawnRatePerSecond; i++)
         {
-            currentEnemy = GameObject.FindGameObjectsWithTag("Enemy").Length;
             if(currentEnemy < 100) {
                 GameObject enemy = ObjectPulling.instance.SpawnFromPool("Enemies", SpawnLocation(),Quaternion.identity);
                 enemy.GetComponent<EnemyController>().SetEnemyData(enemyWave[currentWave].enemies[0]);
@@ -60,7 +60,7 @@ public class EnemySpawner : MonoBehaviour
                 currentWave++;
                 if(currentWave <= enemyWave.Length)
                 {
-                    GameEnd = true;
+                    SpawnEnd = true;
                 }
                 
 

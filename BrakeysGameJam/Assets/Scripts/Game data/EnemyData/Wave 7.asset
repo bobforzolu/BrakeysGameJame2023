@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15e566883b6c62e4ca6d546baf154419, type: 3}
-  m_Name: HardSLime
+  m_Name: Wave 7
   m_EditorClassIdentifier: 
-  EnemySprite: {fileID: -1313875999, guid: 70d22c427fbf8c94b92a4e64452e253f, type: 3}
+  EnemySprite: {fileID: 1102649757, guid: 70d22c427fbf8c94b92a4e64452e253f, type: 3}
   animationClip: {fileID: 9100000, guid: 0831eec373a19514684f37fe6096e0b2, type: 2}
-  Color: {r: 1, g: 0, b: 0, a: 1}
-  speed: 4
-  health: 20
-  Damage: 12
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  speed: 5
+  health: 100
+  Damage: 15

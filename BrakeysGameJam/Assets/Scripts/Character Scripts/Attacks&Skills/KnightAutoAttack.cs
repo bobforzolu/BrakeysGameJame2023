@@ -40,6 +40,10 @@ public class KnightAutoAttack : MonoBehaviour
         else
         {
             timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                canattack = true;
+            }
         }
 
        

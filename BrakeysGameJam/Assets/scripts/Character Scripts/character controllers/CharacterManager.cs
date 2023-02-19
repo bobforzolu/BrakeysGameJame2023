@@ -28,6 +28,7 @@ public  class CharacterManager : MonoBehaviour
     public StatsGraphic statsGraphic;
     public GameObject PauseMenue;
     public GameObject Gameover;
+    public GameObject victory;
     private void Awake()
     {
         
@@ -37,7 +38,15 @@ public  class CharacterManager : MonoBehaviour
     {
         SetUpCharacter();
     }
-    
+    private void Update()
+    {
+        if (EnemySpawner.enemySpawner.currentEnemy <= 10 && EnemySpawner.enemySpawner.SpawnEnd)
+        {
+            victory.SetActive(true);
+            GameController.instance.Pause();
+        }
+    }
+
     public void SetUpCharacter()
     {
         for (int i = 0; i < character.Length; i++)
