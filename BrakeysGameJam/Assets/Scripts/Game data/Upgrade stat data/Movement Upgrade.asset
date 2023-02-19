@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Movement Upgrade
   m_EditorClassIdentifier: 
   StatsIncreaseAmount: 5
-  description: increase movement
+  description: 'increase movement '
   stateUpgrade: 3

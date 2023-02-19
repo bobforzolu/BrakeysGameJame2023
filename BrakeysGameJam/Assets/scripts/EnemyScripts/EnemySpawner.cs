@@ -6,7 +6,7 @@ using Cinemachine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]private EnemyWave[] enemyWave;
-    private int currentWave;
+    public int currentWave { get; private set; }
 
     private Camera mainCamera;
     private float camHeight;
@@ -20,7 +20,12 @@ public class EnemySpawner : MonoBehaviour
 
     public int currentEnemy;
     public float spawnRadius = 2f;
-
+    public static EnemySpawner enemySpawner;
+    public bool GameEnd;
+    private void Awake()
+    {
+        enemySpawner = this;
+    }
     void Start()
     {
         mainCamera = Camera.main;
@@ -31,7 +36,11 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        StartSpawnTimer();
+        if (!GameEnd)
+        {
+            StartSpawnTimer();
+
+        }
     }
 
     public void SpawnEnemy()
@@ -46,14 +55,20 @@ public class EnemySpawner : MonoBehaviour
                 enemyWave[currentWave].summonedEnemies++;
             
             }
-            if (enemyWave[currentWave].summonedEnemies / enemyWave[currentWave].EnemyCount > 0.7f &&  currentWave< enemyWave.Length)
+            if (enemyWave[currentWave].summonedEnemies / enemyWave[currentWave].EnemyCount > 0.9f &&  currentWave< enemyWave.Length)
             { 
                 currentWave++;
+                if(currentWave <= enemyWave.Length)
+                {
+                    GameEnd = true;
+                }
+                
 
             }
            
             
         }
+
     }
     public Vector2 SpawnLocation()
     {

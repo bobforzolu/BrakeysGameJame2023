@@ -8,4 +8,5 @@ public class AttackAbilitys: ScriptableObject
 {
     public int Damage;
     public float SkillConsumption;
+    public float speed;
 }

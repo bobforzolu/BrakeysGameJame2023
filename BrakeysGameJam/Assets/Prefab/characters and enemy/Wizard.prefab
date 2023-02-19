@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5845442041625049715}
   - component: {fileID: 1361706713}
+  - component: {fileID: 3406678701760439747}
   m_Layer: 0
   m_Name: autoattack
   m_TagString: Untagged
@@ -80,6 +81,21 @@ MonoBehaviour:
   Projectile: {fileID: 8611171131064011432, guid: 5f846745df928c749a3b8ad272353318, type: 3}
   attackPoint: {fileID: 752103485}
   AutoAttackLeve: 0
+--- !u!114 &3406678701760439747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323556742877509773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cac1a972b9e56b4bbecd69052ecd58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillData: {fileID: 11400000, guid: a052adaeb348c9548ac0347bbd10e87f, type: 2}
+  attackpoint: {fileID: 752103485}
+  AutoAttackLeve: 1
 --- !u!1 &5815590572276079142
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,8 +108,8 @@ GameObject:
   - component: {fileID: 7751050273879577878}
   - component: {fileID: 1561595585}
   m_Layer: 0
-  m_Name: 'Wizard Graphics '
-  m_TagString: Untagged
+  m_Name: Graphic
+  m_TagString: Graphic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,6 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4673b0d7cc77143affcbf19f3a9cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeVisuals: {fileID: 0}
+  ui: {fileID: 0}
+  upgradeui: {fileID: 0}
 --- !u!114 &6261834050305526565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: c1895f2761d08be4a93b10de8a5482f7, type: 2}
   skilliconData: {fileID: 11400000, guid: 23a0674651a920545bf6c9f20c51cf32, type: 2}
+  ispaused: 0
+  anim: {fileID: 0}
+  sprite: {fileID: 0}
   autoattackpoint: {fileID: 2323556742877509773}
 --- !u!61 &1120269133943344075
 BoxCollider2D:
@@ -383,7 +405,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5842618121922534817}
   - component: {fileID: 4114341177766960035}
-  - component: {fileID: 5720531131055541514}
   m_Layer: 0
   m_Name: abilities
   m_TagString: Untagged
@@ -422,20 +443,6 @@ MonoBehaviour:
   skilldata: {fileID: 11400000, guid: c83e8d91f5fa8284d94ad393e8e59850, type: 2}
   cyclone: {fileID: 500961317706025562}
   isSkillactive: 0
---- !u!114 &5720531131055541514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525392057955519784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cac1a972b9e56b4bbecd69052ecd58d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillData: {fileID: 11400000, guid: 11447c690bc84f34386b28211bdd5a69, type: 2}
-  meteor: {fileID: 0}
 --- !u!1001 &5500496553981089558
 PrefabInstance:
   m_ObjectHideFlags: 0

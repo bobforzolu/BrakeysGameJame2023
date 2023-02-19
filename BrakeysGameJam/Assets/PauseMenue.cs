@@ -8,7 +8,7 @@ public class PauseMenue : MonoBehaviour
    public void Quite()
     {
 
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(0).name);
+       
     }
     public void Resume()
     {

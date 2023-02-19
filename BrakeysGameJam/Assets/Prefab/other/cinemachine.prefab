@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8255399094300603152}
   m_Layer: 0
   m_Name: meteorSpawnPoint
-  m_TagString: Untagged
+  m_TagString: Meteor
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8255399094544910914}
   - component: {fileID: 8255399094544910915}
+  - component: {fileID: 2001953480}
   m_Layer: 0
   m_Name: camera
   m_TagString: CinemachineCamera
@@ -191,6 +192,21 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 8255399094100102152}
+--- !u!114 &2001953480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255399094544910916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoundingShape2D: {fileID: 0}
+  m_Damping: 0.54
+  m_MaxWindowSize: -1
 --- !u!1 &8255399094886093451
 GameObject:
   m_ObjectHideFlags: 0

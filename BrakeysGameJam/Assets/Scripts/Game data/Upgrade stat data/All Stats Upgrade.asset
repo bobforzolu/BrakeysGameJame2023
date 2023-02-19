@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce114d33850663449534914f4389752, type: 3}
   m_Name: All Stats Upgrade
   m_EditorClassIdentifier: 
-  StatsIncreaseAmount: 5
-  description: increase all stats
+  StatsIncreaseAmount: 2
+  description: 'increase all stats '
   stateUpgrade: 5

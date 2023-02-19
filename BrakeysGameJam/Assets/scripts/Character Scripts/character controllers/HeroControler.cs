@@ -17,7 +17,8 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
     public LevelSystemController levelSystem { get; private set; }
     protected bool isdead;
     public bool ispaused;
-
+    public Animator anim;
+    public SpriteRenderer sprite;
     protected virtual void Awake()
     {
         heroStats = new HeroStats(characterData);
@@ -32,6 +33,10 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
         healthVisual = GetComponentInChildren<HeroHealthVisual>();
         healthVisual.SetHeroStats(heroStats);
         input.playerInputActions.player.pause.performed += Pause_performed;
+
+        anim = gameObject.transform.Find("Graphic").GetComponent<Animator>();
+        sprite = gameObject.transform.Find("Graphic").GetComponent<SpriteRenderer>();
+
     }
 
     private void Pause_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -64,6 +69,45 @@ public abstract class HeroControler :MonoBehaviour,IDamagable
         if(isdead) return;
         heroStats.RecoverEnergy();
         heroStats.RecoverHealth();
+        Animplayer();
+    }
+
+    public void Animplayer()
+    {
+        Vector2 mouseposition = input.GetMousePosition();
+
+        if( mouseposition.y > 0.5 && mouseposition.x < .5f && mouseposition.x > -.5f)
+        {
+            anim.SetBool("f", false);
+            anim.SetBool("d", false);
+            anim.SetBool("u", true);
+            sprite.flipX = false;
+
+
+        }
+        else if(mouseposition.y < 0.5f && mouseposition.y < -0.5f && mouseposition.x > 0.5f)
+        {
+            anim.SetBool("u", false);
+            anim.SetBool("d", false);
+            anim.SetBool("f", true);
+            sprite.flipX = false;
+
+        }
+        else if (mouseposition.y < -0.5 && mouseposition.x < .5f && mouseposition.x > -0.5f)
+        {
+            anim.SetBool("f", false);
+            anim.SetBool("u", false);
+            anim.SetBool("d", true);
+            sprite.flipX = false;
+
+        }
+        else if(mouseposition.y > -0.5f && mouseposition.y < 0.5f && mouseposition.x < -0.5f)
+        {
+            anim.SetBool("u", false);
+            anim.SetBool("d", false);
+            anim.SetBool("f", true);
+            sprite.flipX= true;
+        }
     }
 
     public  void LoadData()

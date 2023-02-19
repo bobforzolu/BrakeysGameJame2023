@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initalSpeed: 3
   initalAttack: 5
-  initalttakSpeed: 5
+  initalttakSpeed: 0
   initalHealth: 15
-  AbilityEnergy: 15
+  AbilityEnergy: 20

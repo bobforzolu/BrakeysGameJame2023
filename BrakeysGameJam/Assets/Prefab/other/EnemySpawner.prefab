@@ -45,8 +45,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWave:
-  - SpawnRatePerSecond: 20
+  - SpawnRatePerSecond: 15
     EnemyCount: 100
+    summonedEnemies: 0
     enemies:
     - {fileID: 11400000, guid: 2e4d757f068e8294a8b90718578e872a, type: 2}
-  enemyPrefab: {fileID: 118240339289979060, guid: 388377aa3b014ca44832d7e02d20e3d2, type: 3}
+  - SpawnRatePerSecond: 15
+    EnemyCount: 100
+    summonedEnemies: 0
+    enemies:
+    - {fileID: 11400000, guid: 2e4d757f068e8294a8b90718578e872a, type: 2}
+  - SpawnRatePerSecond: 30
+    EnemyCount: 100
+    summonedEnemies: 0
+    enemies:
+    - {fileID: 11400000, guid: 2e4d757f068e8294a8b90718578e872a, type: 2}
+  currentEnemy: 0
+  spawnRadius: 30

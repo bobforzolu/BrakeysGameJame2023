@@ -17,8 +17,8 @@ public class DamageOverTimeTimer : MonoBehaviour
     private bool startattack;
     void Start()
     {
-        hitBoxDetection = GetComponentInChildren<HitBoxDetection>();
 
+        hitBoxDetection = GetComponentInChildren<HitBoxDetection>();
        SetTimers();
     }
     public void SetTimers()
@@ -35,7 +35,10 @@ public class DamageOverTimeTimer : MonoBehaviour
             durationTimer -= Time.deltaTime;
             if(attackTimer < 0)
             {
-                hitBoxDetection.DoDamage();
+                hitBoxDetection.SetableDoDamage((heroStats.GetAttackDamage()  )+ skills.Damage );
+               // Debug.Log((heroStats.GetAttackDamage() / 50) * skills.Damage);
+                Debug.Log(heroStats.GetAttackDamage());
+                Debug.Log(heroStats);
                attackTimer =  baseAttackInterval();
             }
             else

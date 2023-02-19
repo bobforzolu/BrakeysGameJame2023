@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Knight Auto attack Data
   m_EditorClassIdentifier: 
   DeacresAutoattackCooldown: 0
-  AutoattackCoolDown: 2
+  AutoattackCoolDown: 0.5
   Damage: 10
   ProjectileSpeed: 0
   ProjectileAmount: 0

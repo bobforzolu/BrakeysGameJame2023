@@ -10,6 +10,7 @@ TagManager:
   - UpGradeUi
   - CinemachineCamera
   - Meteor
+  - Graphic
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Items
   - Enemy
   - shield
-  - 
+  - confinder
   - 
   - 
   - 

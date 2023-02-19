@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class wizardAutoAttack : MonoBehaviour
@@ -55,7 +56,7 @@ public class wizardAutoAttack : MonoBehaviour
 
     private float TimeUntilAttack()
     {
-        timer = attackData.AutoattackCoolDown - (attackData.DeacresAutoattackCooldown - heroStats.GetAttackSpeed());
+        timer = attackData.AutoattackCoolDown  - heroStats.GetAttackSpeed();
 
         return timer;
     }
@@ -77,10 +78,9 @@ public class wizardAutoAttack : MonoBehaviour
             float angle = startingAngle + i * angleBetweenArrows;
 
             // Instantiate a new arrow from the prefab
-            GameObject newArrow = Instantiate(Projectile);
+            GameObject newArrow = ObjectPulling.instance.SpawnFromPool("WizardBlast", attackPoint.transform.position, quaternion.identity);
 
-            // Set the position of the new arrow to the spawner's position
-            newArrow.transform.position = attackPoint.transform.position;
+           
 
             // Set the rotation of the new arrow to match the angle
             newArrow.transform.eulerAngles = new Vector3(0, 0, angle);

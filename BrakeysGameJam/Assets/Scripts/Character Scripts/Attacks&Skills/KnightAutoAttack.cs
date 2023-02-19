@@ -10,6 +10,7 @@ public class KnightAutoAttack : MonoBehaviour
     private float timer;
     public Collider2D hitbox;
     private HitBoxDetection hitDetectBox;
+    public bool isanimationDone;
 
 
     private int currentDamage;
@@ -28,25 +29,27 @@ public class KnightAutoAttack : MonoBehaviour
     }
     public void Attack()
     {
+       
         if (canattack)
         {
-            hitDetectBox.SetableDoDamage(heroStats.GetAttackDamage());
-            timer = TimeUntilAttack();
-            canattack = false;
+                hitDetectBox.SetableDoDamage(heroStats.GetAttackDamage() + attackData.Damage);
+                timer = TimeUntilAttack();
+            Debug.Log("dd done");
+                canattack = false;
         }
         else
         {
             timer -= Time.deltaTime;
-            if (timer < 0)
-            {
-                canattack = true;
-            }
         }
+
+       
+       
 
     }
     private float TimeUntilAttack()
     {
-        timer = timer = (attackData.DeacresAutoattackCooldown - heroStats.GetAttackSpeed());
+        timer = (attackData.AutoattackCoolDown );
+        
 
         return timer;
     }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AttackSpeed Upgrade
   m_EditorClassIdentifier: 
   StatsIncreaseAmount: 5
-  description: increase attack speed by
+  description: 'increase attack speed by '
   stateUpgrade: 2

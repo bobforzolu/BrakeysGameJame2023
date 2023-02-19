@@ -20,7 +20,6 @@ public class SkillCycloneShield : MonoBehaviour
         BaseDamage = skilldata.Damage;
         consumption = skilldata.EnergyConsumption;
         damageOverTime = GetComponentInChildren<DamageOverTimeTimer>();
-        detection= GetComponentInChildren<HitBoxDetection>();
     }
     public void ActivateSkill()
     {
@@ -46,7 +45,6 @@ public class SkillCycloneShield : MonoBehaviour
         if (isSkillactive && heroStats.GetEnergy() > 0)
         {
             heroStats.Abilityisused((Time.deltaTime * consumption));
-            detection.UpdateDamage(AttackDamage());
         }
         else
         {

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: da2c010992b63e742a2721ce5c5d7bf2, type: 2}
   skilliconData: {fileID: 11400000, guid: cdd0a030ac2092849bf604831d82383a, type: 2}
+  ispaused: 0
   autoattackGameObject: {fileID: 8249693644980469436}
 --- !u!61 &5667618705119112294
 BoxCollider2D:
@@ -139,8 +140,8 @@ GameObject:
   - component: {fileID: 4428719477465532086}
   - component: {fileID: 8594876309668597764}
   m_Layer: 0
-  m_Name: Archer graphic
-  m_TagString: Untagged
+  m_Name: Graphic
+  m_TagString: Graphic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

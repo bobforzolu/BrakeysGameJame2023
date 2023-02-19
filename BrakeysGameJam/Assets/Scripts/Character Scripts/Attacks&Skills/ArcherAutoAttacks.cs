@@ -11,12 +11,13 @@ public class ArcherAutoAttacks : MonoBehaviour
     public AutoAttackData attackData;
     public GameObject Projectile;
     public GameObject attackPoint;
-   
+
     private float timer;
     private int currentDamage;
     private int numArrows ;
     public int AutoAttackLeve;
     [SerializeField]private float angleBetweenArrows = 10.0f;
+    private bool increase;
     // Start is called before the first frame update
     void Start()
     {
@@ -134,6 +135,13 @@ public class ArcherAutoAttacks : MonoBehaviour
     public void SetBombability( SkillArrowBomb arrowBomb)
     {
         bombskill = arrowBomb;
+    }
+    public void Upgradebow()
+    {
+        if(heroStats.GetAttackDamage() % 15 == 1)
+        {
+            numArrows++;
+        }
     }
 
    

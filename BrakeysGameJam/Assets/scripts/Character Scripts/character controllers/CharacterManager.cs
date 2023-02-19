@@ -27,6 +27,7 @@ public  class CharacterManager : MonoBehaviour
     public HeroStats heroStats { get; private set; }
     public StatsGraphic statsGraphic;
     public GameObject PauseMenue;
+    public GameObject Gameover;
     private void Awake()
     {
         
@@ -50,7 +51,7 @@ public  class CharacterManager : MonoBehaviour
     }
     public void SummonCharacter()
     {
-        if(characterLineUP.Count >= 0)
+        if(characterLineUP.Count > 0)
         {
         // get the max character in the list
         int maxRange = characterLineUP.Count ;
@@ -74,6 +75,8 @@ public  class CharacterManager : MonoBehaviour
         else
         {
             ///gameover
+            Gameover.SetActive(true);
+            GameController.instance.Pause();
         }
         
 

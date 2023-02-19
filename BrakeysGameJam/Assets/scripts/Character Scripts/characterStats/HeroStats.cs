@@ -72,6 +72,7 @@ public class HeroStats
         energy += 1;
         maxEnergy+= 1;
         health += 2;
+        maxHealth+= 2;
 
 
     }
@@ -95,6 +96,7 @@ public class HeroStats
     public void IncreaseAbilityEnergy(int increase)
     {
         energy += increase;
+        maxEnergy+= increase;
     }
     public void TakeDamage(int damage)
     {
@@ -107,22 +109,20 @@ public class HeroStats
     }
     public void RecoverHealth()
     {
-        if(health < maxHealth) { 
-        health += (int)(Time.deltaTime * 1) ;
-        }
+        
     }
     public void RecoverEnergy()
     {
         if(energy < maxEnergy)
         {
 
-        energy += (Time.deltaTime * 1.1f) + (maxEnergy/100);
+        energy += (Time.deltaTime * 1.5f) + (maxEnergy/100);
         }
     }
 
     public string ToStringStats()
     {
-        return $"hp: {maxHealth} \n attack: {attack} \n Energy: {maxEnergy}\n attackspeed: {attackSpeed}\n movement: {movement}";
+        return $" hp: {health}/{maxHealth}  \n attack: {attack} \n Energy: {(int)energy} / {maxEnergy}\n attackspeed: {(float)attackSpeed}\n movement: {(float)movement}";
     }
    
 }
