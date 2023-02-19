@@ -93,9 +93,7 @@ public  class CharacterManager : MonoBehaviour
         }
         else
         {
-            ///gameover
-            Gameover.SetActive(true);
-            GameController.instance.Pause();
+            GameOver();
         }
         
 
@@ -115,5 +113,11 @@ public  class CharacterManager : MonoBehaviour
     {
         heroControler.OnPlayerDeath -= HeroControler_OnPlayerDeath;
 
+    }
+    public void GameOver()
+    {
+        ///gameover
+        Gameover.SetActive(true);
+        GameController.instance.Pause();
     }
 }
